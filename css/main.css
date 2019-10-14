@@ -64,3 +64,26 @@ section{
     margin-left: 5.4%;
     margin-top: 1.6%;
 }
+
+
+#gameOverScreen_hangMan{
+    background-image: url('../img/background.png');
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gameOverTitleHangman{
+
+    margin-left: 8.4%;
+    margin-top: 10.9%;
+}
+
+.mainCharacterIndi{
+    margin-left: 72.8%;
+    margin-top: -63.2%;
+}
