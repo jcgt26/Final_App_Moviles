@@ -1,0 +1,51 @@
+section{
+    width:auto;
+    height:auto;
+    /* border:1px solid black; */
+
+    /* max-width: 50%;
+    height: auto; */
+
+ 
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  html, body{
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+  
+
+.ocultar{
+    display:none;
+}
+
+#mainScreen_hangMan{
+    background-image: url('../img/background.png');
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titleWithText{
+    margin-left: 12.5%;
+    margin-top: 12%;
+}
+
+#mainCharacter{
+    margin-left: 73%;
+    margin-top: -35%;
+}
