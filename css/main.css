@@ -42,12 +42,38 @@ html, body{
     width: 100%;
     height: auto;
 }
+.intro1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    background-image: url('../img/Repite.png');
+}
 .backgroundSection{
     margin: 0;
     padding: 0;
     text-align: center;
     height: 100%;
     background-image: url('../img/Repite.png');
+}
+.history1{
+    width: 100%;
+    height: 0%;
+}
+.advancement{
+    position: fixed;
+    left: 83%;
+    top: 72%;
+}
+.musicIntro{
+    position: fixed;
+    left: 5%;
+    top: 80%;
+}
+.introduction{
+    margin-top: 20%;
+    width: 100%;
+    height: auto
 }
 .oculto{
     display: none;
