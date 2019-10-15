@@ -102,3 +102,35 @@ section{
     margin-left: 5.4%;
     margin-top: 2.1%;
 }
+
+#gameWonScreen_hangMan{
+    background-image: url('../img/background.png');
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gameWonTitleHangman{
+    margin-left: 8.4%;
+    margin-top: 10.9%;
+}
+
+#divPlayAgainBtnGameWon{
+
+    margin-left: 35.9%;
+    margin-top: -22.3%;
+}
+
+#divBackBtnHangManGameWon{
+    margin-left: 5.4%;
+    margin-top: -15%;
+}
+
+#divSoundBtnHangManGameWon{
+    margin-left: 5.4%;
+    margin-top: 2.1%;
+}
