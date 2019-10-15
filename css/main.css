@@ -87,3 +87,18 @@ section{
     margin-left: 72.8%;
     margin-top: -63.2%;
 }
+
+#divPlayAgainBtnGameOver{
+    margin-left: 35.9%;
+    margin-top: -22.3%;
+}
+
+#divBackBtnHangManGameOver{
+    margin-left: 5.4%;
+    margin-top: -15%;
+}
+
+#divSoundBtnHangManGameOver{
+    margin-left: 5.4%;
+    margin-top: 2.1%;
+}
