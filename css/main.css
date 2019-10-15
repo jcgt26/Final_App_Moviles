@@ -59,15 +59,12 @@ html, body{
     height:100%;
     
 }
-.killa{
+.killaPuzzle{
     position: fixed;
     top: 15%;
     right: 7%;
     width: 212px;
     height: 570px;
-    background: url("../img/Kila.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
 
 .puzzle_text{
@@ -76,70 +73,53 @@ html, body{
     left: 18%;
     width: 485px;
     height: 364px;
-    background: url("../img/rompecabezas.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
-.btn_jugar{
+.btnJugarPuzzle{
     position: fixed;
-    bottom: 5%;
-    left: 31%;
+    bottom: 15%;
+    left: 37%;
     width: 140px;
     height: 170px;
-    background: url("../img/Jugar_btn.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
+
 }
-.btn_jugar.ganar{
-    bottom: 5%;
-    left: 30%;
+.btnJugarPuzzle.ganar{
+    bottom: 15%;
+    left: 37%;
     width: 140px;
     height: 150px; 
 }
-.btn_jugar.perder{
-    bottom: 5%;
-    left: 30%;
+.btnJugarPuzzler.perder{
+    bottom: 15%;
+    left: 37%;
     width: 140px;
     height: 150px; 
 }
 
-.btn_atras{
+.btnAtrasPuzzle{
     position: fixed;
     bottom: 25%;
     left: 10%;
     width: 65px;
     height: 70px;
-    background: url("../img/atras_btn.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
-.btn_sonido{
+.btnSonidoPuzzle{
     position: fixed;
     bottom: 13%;
     left: 10%;
     width: 65px;
     height: 70px;
-    background: url("../img/sonido_btn.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
-.perdiste{
+.Lose{
     position: fixed;
     top: 13%;
     left: 12%;
     width: 598px;
     height: 578px;
-    background: url("../img/perdiste_rompecabezas.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
-.ganaste{
+.win{
     position: fixed;
     top: 13%;
     left: 12%;
     width: 598px;
     height: 578px;
-    background: url("../img/ganaste_rompecabezas.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
