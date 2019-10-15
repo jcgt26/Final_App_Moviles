@@ -3,6 +3,50 @@ html, body{
     padding: 0;
     text-align: center;
     height: 100%;
+    overflow: hidden;
+}
+.backgroundInitial{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    background-image: url('../img/Fondo_cafe.png');
+}
+.nameApp{
+    width: 100%;
+    height: 0%;
+}
+.titule{
+    width: 100%;
+    height: auto
+}
+.playPrincipal{
+    position: fixed;
+    left: 42%;
+    top: 57%;
+}
+.musicPrincipal{
+    position: fixed;
+    left: 42%;
+    top: 85%;
+}
+.creditsPrincipal{
+    position: fixed;
+    left: 53%;
+    top: 87%;
+}
+.childrens{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: auto;
+}
+.backgroundSection{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
     background-image: url('../img/Repite.png');
 }
 .oculto{
@@ -15,7 +59,6 @@ html, body{
     height:100%;
     
 }
-/* -----------------Section 1------------------------- */
 .killa{
     position: fixed;
     top: 15%;
