@@ -134,3 +134,30 @@ section{
     margin-left: 5.4%;
     margin-top: 2.1%;
 }
+
+#intro2Screen{
+    background-image: url('../img/background.png');
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#intro2{
+    margin-left: 17%;
+    margin-top: 27.9%;
+}
+
+#divSoundBtnIntro2{
+    margin-left: 5.4%;
+    margin-top: 12.5%;
+}
+
+#divContinueBtnIntro2{
+
+    margin-left: 82.8%;
+    margin-top: -14.4%;
+}
