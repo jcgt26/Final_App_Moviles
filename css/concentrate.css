@@ -104,18 +104,17 @@ html, body{
     position: fixed;
     bottom: 25%;
     left: 10%;
-    width: 65px;
-    height: 70px;
+    width: 78px;
+    height:87px;
     background: url("../img/atras_btn-min.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
+  
 }
 .btn_sonido{
     position: fixed;
     bottom: 13%;
     left: 10%;
-    width: 65px;
-    height: 70px;
+    width: 78px;
+    height: 87px;
     background: url("../img/sonido_btn-min.png") no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -139,4 +138,31 @@ html, body{
     background: url("../img/ganaste_concentrate-min.png") no-repeat;
     background-position: center center;
     background-size: 100%;
+}
+
+/* ----------------Tarjetas------------------- */
+.wrap{
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    width: 471px;
+    height: auto;
+    /* margin: 50px auto; */
+    display: flex;
+    /* background-color: red; */
+}
+.tarjeta-wrap{
+}
+.tarjeta{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/card_Black.png);
+    display: inline-block;
+    margin-top: 2px;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.tarjeta.reverso{
+background-image: url(../img/carta_white.png);
 }
