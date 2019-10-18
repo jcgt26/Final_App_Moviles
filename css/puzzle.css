@@ -173,8 +173,11 @@
     background-image: url(../img/fondo_rompecabezas.png);
     background-repeat: no-repeat;
     margin-left: 49px;  
+    position: relative;
+    overflow: hidden;
+    background-size:cover;
 }
-.entorno{
+.entrono{
     position: fixed;
     overflow: hidden;
 }
