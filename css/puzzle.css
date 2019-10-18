@@ -139,3 +139,34 @@
     width: 598px;
     height: 578px;
 }
+#DevelopPuzzle{
+    background-image: url(../img/background.png);
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%; 
+}
+.titulePuzzle{
+    width: 100%;
+    height: 16%;
+    margin-top: 25px;
+}
+.ImgPuzzle{
+    text-align: center;
+}
+.BtnhomePuzle{
+    float: left;
+    position: fixed;
+    top: 30px;
+    left: 46px;
+}
+.btnSonidoPuzzle{
+    position: fixed;
+    top: 30px;
+    left: 87%;
+}
+.entorno{
+    position: fixed;
+    overflow: hidden;
+}
