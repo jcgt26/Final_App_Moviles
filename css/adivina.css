@@ -188,3 +188,38 @@ section{
     margin-left: 82.8%;
     margin-top: -14.4%;
 }
+
+
+#gameScreen_hangMan{
+    background-image: url('../img/RepiteHangman.png');
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    overflow:hidden; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#adivinaBackground{
+    margin-left: 4.1%;
+    margin-top: 12.4%; 
+}
+
+#tltPalabras{
+    margin-left: 20.4%;
+    margin-top: -69.5%; 
+
+}
+
+#btnHomeHangman{
+    margin-left: 3%;
+    margin-top: -11.7%; 
+}
+
+#btnSoundHangman{
+    margin-left: 88.5%;
+    margin-top: -10.3%; 
+}
+
+
