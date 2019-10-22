@@ -118,4 +118,7 @@ function testing(){
         }
 
     }
+    if(bien_ubicada==14){
+        changePage("GanarPuzzle", "DevelopPuzzle");
+    }
 }
