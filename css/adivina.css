@@ -223,3 +223,244 @@ section{
 }
 
 
+#eclipseHangman{
+
+    margin-left: 44.6%;
+    margin-top: 11.6%; 
+}
+
+#sunPathHangman{
+
+    margin-left: 18%;
+    margin-top: -6.7%; 
+}
+
+#sunHangman{
+    margin-left: 6%;
+    margin-top: -6.5%; 
+}
+
+#moonPathHangman{
+    margin-left: 56.3%;
+    margin-top: -6.7%; 
+}
+
+#moonHangman{
+    margin-left: 84.3%;
+    margin-top: -5.8%; 
+}
+
+#usedLettersHangman{
+    margin-left: 10%;
+    margin-top: 13.7%; 
+}
+
+#topicBarHangman{
+    margin-left: 31%;
+    margin-top: -36%;    
+}
+
+#letraQ{
+    margin-left: 22%;
+    margin-top: 32%; 
+}
+
+#letraW{
+    margin-left: 27.6%;
+    margin-top: -5.8%; 
+}
+#letraE{
+    margin-left: 33.1%;
+    margin-top: -6%; 
+}
+#letraR{
+    margin-left: 38.5%;
+    margin-top: -6.1%; 
+}
+#letraT{
+    margin-left: 44%;
+    margin-top: -6.1%; 
+}
+#letraY{
+    margin-left: 49.5%;
+    margin-top: -6.1%; 
+}
+#letraU{
+    margin-left: 55%;
+    margin-top: -6.1%; 
+}
+#letraI{
+    margin-left: 60.5%;
+    margin-top: -6.1%; 
+}
+#letraO{
+    margin-left: 66%;
+    margin-top: -6.1%; 
+}
+#letraP{
+    margin-left: 71.5%;
+    margin-top: -6.1%; 
+}
+
+
+#letraA{
+    margin-left: 22%;
+    margin-top: -0.5%; 
+}
+#letraS{
+    margin-left: 27.5%;
+    margin-top: -6%; 
+}
+#letraD{
+    margin-left: 33%;
+    margin-top: -6%; 
+}
+#letraF{
+    margin-left: 38.5%;
+    margin-top: -6%; 
+}
+#letraG{
+    margin-left: 44%;
+    margin-top: -6%; 
+}
+#letraH{
+    margin-left: 49.5%;
+    margin-top: -6%; 
+}
+#letraJ{
+    margin-left: 55%;
+    margin-top: -6%; 
+}
+#letraK{
+    margin-left: 60.5%;
+    margin-top: -6%; 
+}
+#letraL{
+    margin-left: 66%;
+    margin-top: -6%; 
+}
+#letraNN{
+    margin-left: 71.5%;
+    margin-top: -6%; 
+}
+
+#letraZ{
+    margin-left: 30.3%;
+    margin-top: -0.9%; 
+}
+#letraX{
+    margin-left: 35.8%;
+    margin-top: -6.1%; 
+}
+#letraC{
+    margin-left: 41.3%;
+    margin-top: -6.1%; 
+}
+#letraV{
+    margin-left: 46.8%;
+    margin-top: -6.1%; 
+}
+#letraB{
+    margin-left: 52.3%;
+    margin-top: -6.1%; 
+}
+#letraN{
+    margin-left: 57.8%;
+    margin-top: -6.1%; 
+}
+#letraM{
+    margin-left: 63.3%;
+    margin-top: -6.1%; 
+}
+
+/* .movement{
+    transition-property: margin-left;
+    transition-duration: 3s;
+    margin-left: 60% !important;
+} */
+
+
+#wordAburraes{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -29%;
+    display: block;
+
+}
+
+#imgWordHangman{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#aburraes_a1{
+    display: block;
+    margin-left: 33.2%;
+    margin-top: -5%;
+}
+
+#aburraes_a2{
+    display: block;
+    margin-left: 55.4%;
+    margin-top: -5%;
+}
+#aburraes_b{
+    display: block;
+    margin-left: 37.8%;
+    margin-top: -5.5%;
+}
+#aburraes_u{
+    display: block;
+    margin-left: 42%;
+    margin-top: -5.2%;
+}
+#aburraes_r1{
+    display: block;
+    margin-left: 46.3%;
+    margin-top: -5.2%;
+}
+#aburraes_r2{
+    display: block;
+    margin-left: 50.9%;
+    margin-top: -5.2%;
+}
+#aburraes_e{
+    display: block;
+    margin-left: 60%;
+    margin-top: -5.2%;
+}
+#aburraes_s{
+    display: block;
+    margin-left: 64.2%;
+    margin-top: -5.2%;
+}
+
+.ocultarLetter{
+    display: none !important;
+}
+
+
+#containerWrongLetters{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.2%;
+    width: 100%;   
+   
+}
+
+#container2{
+    margin-left: 27%;
+    width: 100%; 
+
+}
+
+.wrongLetters{
+   
+    display: inline-block;
+    margin-left: 5%;
+
+}
+
