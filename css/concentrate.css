@@ -133,26 +133,82 @@
 /* ----------------Tarjetas------------------- */
 .wrap{
     position: absolute;
-    top: 23%;
-    left: 23%;
-    width: 471px;
+    top: 15%;
+    left: 10%;
+    width: 85%;
     height: auto;
-    /* margin: 50px auto; */
+    margin: 50px auto;
     display: flex;
-    /* background-color: red; */
+    padding-top: 34px;
+    /* background-color: #000; */
 }
-.tarjeta-wrap{
-}
+
 .tarjeta{
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/card_Black.png);
+    margin-right: 5px !important;
+    margin-bottom: 20px;
     display: inline-block;
-    margin-top: 2px;
+    }
+
+.tarjeta.tarjeta_reves{
+    width: 110px;
+    height: 159px;
+    background-color: red;
+    background: url("../img/Concentrate/carta1.png ") no-repeat;
+    background-repeat:no-repeat;
     background-position: center center;
     background-size: 100%;
 }
 
-.tarjeta.reverso{
-background-image: url(../img/carta_white.png);
+.tarjeta.tarjeta_reves.cruz{
+    background: url("../img/carta_cruz.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.iglesia{
+    background: url("../img/carta_iglesia.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.jesus{
+    background: url("../img/carta_jesus.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.metrocable{
+    background: url("../img/carta_metrocable.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.puente{
+    background: url("../img/carta_puente.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.silla{
+    background: url("../img/carta_silla.png ") no-repeat;
+}
+.tarjeta.tarjeta_reves.virgen{
+    background: url("../img/carta_virgen.png ") no-repeat;
+}
+
+/* s */
+
+.fondo_concentrate{
+    position: fixed;
+    top: 17%;
+    left: 8%;
+    width: 846px;
+    height: 530px;
+    /* background-image: url(../img/Concentrate/fondo_concentrate.png) no-repeat; */
+    /* background-color: red; */
+    background-position: center center;
+    background-size: 100%;
+
+}
+#fondo_concentrate{
+    position: fixed;
+    top: 17%;
+    left: 5%;
+}
+#titulo_juego_concentrate{
+    position: fixed;
+    left: 28%;
+}
+#boton_home_concentrate{
+    position: fixed;
+    left: 5%;
+}
+#boton_on_concentrate{
+    position: fixed;
+    right: 5%;
 }
