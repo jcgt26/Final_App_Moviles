@@ -118,12 +118,12 @@
 
         <div id="divPlayAgainBtnGameOver">
             <input id="playAgainHangmanBtn" type="image" src="img/btnReintentarlo.png" alt="Submit" class="button"
-                onclick="">
+                onclick="playAgain('2');">
         </div>
 
         <div id="divBackBtnHangManGameOver">
             <input id="backBtnHangmanGameOver" type="image" src="img/btnAtras.png" alt="Submit" class="button"
-                onclick="">
+                onclick="backToMenuEndGame('2');">
         </div>
 
         <div id="divSoundBtnHangManGameOver">
@@ -145,12 +145,12 @@
 
         <div id="divPlayAgainBtnGameWon">
             <input id="playAgainHangmanBtnGameWon" type="image" src="img/btnReintentarlo.png" alt="Submit"
-                class="button" onclick="">
+                class="button" onclick="playAgain('3');">
         </div>
 
         <div id="divBackBtnHangManGameWon">
             <input id="backBtnHangmanGameWon" type="image" src="img/btnAtras.png" alt="Submit" class="button"
-                onclick="">
+                onclick="backToMenuEndGame('3')">
         </div>
 
         <div id="divSoundBtnHangManGameWon">
@@ -285,7 +285,7 @@
 
 
         <section id="wordAburraes">
-            <img id="imgWordHangman" src="img/palabraAburraes.png" alt="">
+            <img id="imgWordaburraes" src="img/palabraAburraes.png" alt="" class="ocultarLetter">
             <img id="aburraes_a1" src="img/letterA.png" alt="" class="ocultarLetter">
             <img id="aburraes_a2" src="img/letterA.png" alt="" class="ocultarLetter">
             <img id="aburraes_b" src="img/letterB.png" alt="" class="ocultarLetter">
@@ -296,17 +296,122 @@
             <img id="aburraes_s" src="img/letterS.png" alt="" class="ocultarLetter">
         </section>
 
+        <section id="wordAltura" class="">
+            <img id="imgWordaltura" src="img/palabraAltura.png" alt="" class="ocultarLetter">
+            <img id="altura_a1" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="altura_l" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="altura_t" src="img/letterT.png" alt="" class="ocultarLetter">
+            <img id="altura_u" src="img/letterU.png" alt="" class="ocultarLetter">
+            <img id="altura_r" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="altura_a2" src="img/letterA.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordceremoniales">
+            <img id="imgWordceremoniales" src="img/palabraCeremoniales.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="ceremoniales_c" src="img/letterC.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_e1" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_r" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_e2" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_m" src="img/letterM.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_o" src="img/letterO.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_n" src="img/letterN.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_i" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_a" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_l" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_e3" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="ceremoniales_s" src="img/letterS.png" alt="" class="ocultarLetter">
+
+        </section>
+
+
+        <section id="wordCerro">
+            <img id="imgWordcerro" src="img/palabraCerro.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="cerro_c" src="img/letterC.png" alt="" class="ocultarLetter">
+            <img id="cerro_e" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="cerro_r1" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="cerro_r2" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="cerro_o" src="img/letterO.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordIndi">
+            <img id="imgWordindi" src="img/palabraIndi.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="indi_i1" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="indi_n" src="img/letterN.png" alt="" class="ocultarLetter">
+            <img id="indi_d" src="img/letterD.png" alt="" class="ocultarLetter">
+            <img id="indi_i2" src="img/letterI.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordKila">
+            <img id="imgWordkila" src="img/palabraKila.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="kila_k" src="img/letterK.png" alt="" class="ocultarLetter">
+            <img id="kila_i" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="kila_l" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="kila_a" src="img/letterA.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordMedellin">
+            <img id="imgWordmedellin" src="img/palabraMedellin.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="medellin_m" src="img/letterM.png" alt="" class="ocultarLetter">
+            <img id="medellin_e1" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="medellin_d" src="img/letterD.png" alt="" class="ocultarLetter">
+            <img id="medellin_e2" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="medellin_l1" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="medellin_l2" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="medellin_i" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="medellin_n" src="img/letterN.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordPrimavera">
+            <img id="imgWordprimavera" src="img/palabraPrimavera.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="primavera_p" src="img/letterP.png" alt="" class="ocultarLetter">
+            <img id="primavera_r1" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="primavera_i" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="primavera_m" src="img/letterM.png" alt="" class="ocultarLetter">
+            <img id="primavera_a1" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="primavera_v" src="img/letterV.png" alt="" class="ocultarLetter">
+            <img id="primavera_e" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="primavera_r2" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="primavera_a2" src="img/letterA.png" alt="" class="ocultarLetter">
+        </section>
+
+        <section id="wordValledeaburra">
+            <img id="imgWordvalledeaburra" src="img/palabraValleDeAburra.png" alt=""
+                class="imgCurrentWord ocultarLetter">
+            <img id="valledeaburra_v" src="img/letterV.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_a1" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_l1" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_l2" src="img/letterL.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_e1" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_d" src="img/letterD.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_e2" src="img/letterE.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_a2" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_b" src="img/letterB.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_u" src="img/letterU.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_r1" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_r2" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_a3" src="img/letterA.png" alt="" class="ocultarLetter">
+        </section>
+
+
+        <section id="wordTradicional">
+            <img id="imgWordtradicional" src="img/palabraTradicional.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="tradicional_t" src="img/letterT.png" alt="" class="ocultarLetter">
+            <img id="tradicional_r" src="img/letterR.png" alt="" class="ocultarLetter">
+            <img id="tradicional_a1" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="tradicional_d" src="img/letterD.png" alt="" class="ocultarLetter">
+            <img id="tradicional_i1" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="tradicional_c" src="img/letterC.png" alt="" class="ocultarLetter">
+            <img id="tradicional_i2" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="tradicional_o" src="img/letterO.png" alt="" class="ocultarLetter">
+            <img id="tradicional_n" src="img/letterN.png" alt="" class="ocultarLetter">
+            <img id="tradicional_a2" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="tradicional_l" src="img/letterL.png" alt="" class="ocultarLetter">
+        </section>
+
 
         <div id="containerWrongLetters">
-
             <div id="container2">
-
-               
-
             </div>
-
-
-
         </div>
 
 
