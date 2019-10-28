@@ -4,6 +4,7 @@ let wrongLetters = [];
 let sections = [];
 let wordsSpace = [];
 let wordsNotPlayed = [];
+let currentLevel = 1;
 
 
 
@@ -25,7 +26,7 @@ sections[0] = document.getElementById("gameScreen_hangMan");
 sections[1] = document.getElementById("mainScreen_hangMan");
 sections[2] = document.getElementById("gameOverScreen_hangMan");
 sections[3] = document.getElementById("gameWonScreen_hangMan");
-
+let level = document.getElementById("level");
 
 let wrongLettersSpace = document.getElementById("container2");
 
@@ -516,6 +517,8 @@ function changeWord() {
         wrongLettersSpace.innerHTML = "";
         guessedLetters = [];
         wrongLetters = [];
+        currentLevel++;
+        level.src = "img/level" + currentLevel + ".png";
 
     }
 
@@ -526,6 +529,8 @@ function changeWord() {
 
 function playAgain(section) {
 
+    currentLevel = 1;
+    level.src = "img/level" + currentLevel + ".png";
 
     document.getElementById("imgWord" + "aburraes").classList.add("ocultarLetter");
     document.getElementById("imgWord" + "altura").classList.add("ocultarLetter");
