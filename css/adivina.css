@@ -247,7 +247,7 @@ section{
 
 #moonHangman{
     margin-left: 84.3%;
-    margin-top: -5.8%; 
+    margin-top: -5.7%; 
 }
 
 #usedLettersHangman{
@@ -382,11 +382,61 @@ section{
     margin-top: -6.1%; 
 }
 
-/* .movement{
+.sunMovement1{
     transition-property: margin-left;
-    transition-duration: 3s;
-    margin-left: 60% !important;
-} */
+    transition-duration: 2s;
+    margin-left: 13.72% !important;
+}
+
+.sunMovement2{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 21.44% !important;
+}
+
+.sunMovement3{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 29.19% !important;
+}
+
+.sunMovement4{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 36.91% !important;
+}
+
+.sunMovement5{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 44.6% !important;
+}
+
+.moonMovement1{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 76.52% !important;
+}
+.moonMovement2{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 68.74% !important;
+}
+.moonMovement3{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 60.96% !important;
+}
+.moonMovement4{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 53.18% !important;
+}
+.moonMovement5{
+    transition-property: margin-left;
+    transition-duration: 2s;
+    margin-left: 45.4% !important;
+}
 
 
 #wordAburraes{

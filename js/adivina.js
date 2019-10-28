@@ -475,11 +475,35 @@ function selectLetter(letter) {
         if (!wrongLetters.includes(letter)) {
             wrongLetters.push(letter);
             addWrongLetter(letter);
+            if (wrongLetters.length === 1) {
+                sunHangman.classList.add("sunMovement1");
+                moonHangman.classList.add("moonMovement1");
+            } else if (wrongLetters.length === 2) {
+                sunHangman.classList.add("sunMovement2");
+                moonHangman.classList.add("moonMovement2");
+            } else if (wrongLetters.length === 3) {
+                sunHangman.classList.add("sunMovement3");
+                moonHangman.classList.add("moonMovement3");
+            } else if (wrongLetters.length === 4) {
+                sunHangman.classList.add("sunMovement4");
+                moonHangman.classList.add("moonMovement4");
+            } else if (wrongLetters.length === 5) {
+                sunHangman.classList.add("sunMovement5");
+                moonHangman.classList.add("moonMovement5");
+            }
+
+
+
+
             if (wrongLetters.length === 5) {
-                sections[0].classList.add("ocultar");
-                sections[2].classList.remove("ocultar");
-                guessedLetters = [];
-                wrongLetters = [];
+                setTimeout(function () {
+                    sections[0].classList.add("ocultar");
+                    sections[2].classList.remove("ocultar");
+                    guessedLetters = [];
+                    wrongLetters = [];
+
+                }, 5000);
+
 
 
             }
@@ -506,6 +530,9 @@ function addWrongLetter(letter) {
 
 
 function changeWord() {
+    sunHangman.classList.remove("sunMovement1", "sunMovement2", "sunMovement3", "sunMovement4", "sunMovement5");
+    moonHangman.classList.remove("moonMovement1", "moonMovement2", "moonMovement3", "moonMovement4", "moonMovement5");
+    
     if (wordsNotPlayed.length === 0) {
         sections[0].classList.add("ocultar");
         sections[3].classList.remove("ocultar");
@@ -531,7 +558,8 @@ function playAgain(section) {
 
     currentLevel = 1;
     level.src = "img/level" + currentLevel + ".png";
-
+    sunHangman.classList.remove("sunMovement1", "sunMovement2", "sunMovement3", "sunMovement4", "sunMovement5");
+    moonHangman.classList.remove("moonMovement1", "moonMovement2", "moonMovement3", "moonMovement4", "moonMovement5");
     document.getElementById("imgWord" + "aburraes").classList.add("ocultarLetter");
     document.getElementById("imgWord" + "altura").classList.add("ocultarLetter");
     document.getElementById("imgWord" + "ceremoniales").classList.add("ocultarLetter");
@@ -661,14 +689,17 @@ function playAgain(section) {
     lengthWord = currentWord.length;
     sections[section].classList.add("ocultar");
     sections[0].classList.remove("ocultar");
-
-
 }
 
-
-function backToMenuEndGame(section){
+function backToMenuEndGame(section) {
     playAgain(section);
     sections[0].classList.add("ocultar");
     //sections[section].classList.add("ocultar");
     sections[1].classList.remove("ocultar");
+}
+
+
+function keyboardMode(state){
+
+
 }
