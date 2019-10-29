@@ -496,6 +496,7 @@ function selectLetter(letter) {
 
 
             if (wrongLetters.length === 5) {
+                keyboardMode(true);
                 setTimeout(function () {
                     sections[0].classList.add("ocultar");
                     sections[2].classList.remove("ocultar");
@@ -689,6 +690,7 @@ function playAgain(section) {
     lengthWord = currentWord.length;
     sections[section].classList.add("ocultar");
     sections[0].classList.remove("ocultar");
+    keyboardMode(false);
 }
 
 function backToMenuEndGame(section) {
@@ -701,5 +703,32 @@ function backToMenuEndGame(section) {
 
 function keyboardMode(state){
 
+    document.getElementById("letterQ").disabled = state;
+    document.getElementById("letterW").disabled = state;
+    document.getElementById("letterE").disabled = state;
+    document.getElementById("letterR").disabled = state;
+    document.getElementById("letterT").disabled = state;
+    document.getElementById("letterY").disabled = state;
+    document.getElementById("letterU").disabled = state;
+    document.getElementById("letterI").disabled = state;
+    document.getElementById("letterO").disabled = state;
+    document.getElementById("letterP").disabled = state;
+    document.getElementById("letterA").disabled = state;
+    document.getElementById("letterS").disabled = state;
+    document.getElementById("letterD").disabled = state;
+    document.getElementById("letterF").disabled = state;
+    document.getElementById("letterG").disabled = state;
+    document.getElementById("letterH").disabled = state;
+    document.getElementById("letterJ").disabled = state;
+    document.getElementById("letterK").disabled = state;
+    document.getElementById("letterL").disabled = state;
+    document.getElementById("letterNN").disabled = state;
+    document.getElementById("letterZ").disabled = state;
+    document.getElementById("letterX").disabled = state;
+    document.getElementById("letterC").disabled = state;
+    document.getElementById("letterV").disabled = state;
+    document.getElementById("letterB").disabled = state;
+    document.getElementById("letterN").disabled = state;
+    document.getElementById("letterM").disabled = state;
 
 }
