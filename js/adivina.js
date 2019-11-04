@@ -1,3 +1,11 @@
+window.onload = init;
+
+function init() {
+    
+    var song = document.getElementById("soundTrack");
+    song.volume = 0.05;
+}
+
 let words = [];
 let guessedLetters = [];
 let wrongLetters = [];
@@ -93,16 +101,23 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
-                    aburraes_a1.classList.add("ocultarLetter");
-                    aburraes_a2.classList.add("ocultarLetter");
-                    aburraes_r1.classList.add("ocultarLetter");
-                    aburraes_r2.classList.add("ocultarLetter");
-                    aburraes_u.classList.add("ocultarLetter");
-                    aburraes_b.classList.add("ocultarLetter");
-                    aburraes_e.classList.add("ocultarLetter");
-                    aburraes_s.classList.add("ocultarLetter");
-                    changeWord();
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                        aburraes_a1.classList.add("ocultarLetter");
+                        aburraes_a2.classList.add("ocultarLetter");
+                        aburraes_r1.classList.add("ocultarLetter");
+                        aburraes_r2.classList.add("ocultarLetter");
+                        aburraes_u.classList.add("ocultarLetter");
+                        aburraes_b.classList.add("ocultarLetter");
+                        aburraes_e.classList.add("ocultarLetter");
+                        aburraes_s.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
+
                 }
                 console.log(lengthWord);
 
@@ -127,14 +142,20 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
-                    altura_a1.classList.add("ocultarLetter");
-                    altura_a2.classList.add("ocultarLetter");
-                    altura_l.classList.add("ocultarLetter");
-                    altura_t.classList.add("ocultarLetter");
-                    altura_u.classList.add("ocultarLetter");
-                    altura_r.classList.add("ocultarLetter");
-                    changeWord();
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                        altura_a1.classList.add("ocultarLetter");
+                        altura_a2.classList.add("ocultarLetter");
+                        altura_l.classList.add("ocultarLetter");
+                        altura_t.classList.add("ocultarLetter");
+                        altura_u.classList.add("ocultarLetter");
+                        altura_r.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -171,20 +192,25 @@ function selectLetter(letter) {
                 if (lengthWord === 0) {
                     console.log("You win this round")
                     document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        ceremoniales_c.classList.add("ocultarLetter");
+                        ceremoniales_e1.classList.add("ocultarLetter");
+                        ceremoniales_r.classList.add("ocultarLetter");
+                        ceremoniales_e2.classList.add("ocultarLetter");
+                        ceremoniales_m.classList.add("ocultarLetter");
+                        ceremoniales_o.classList.add("ocultarLetter");
+                        ceremoniales_n.classList.add("ocultarLetter");
+                        ceremoniales_i.classList.add("ocultarLetter");
+                        ceremoniales_a.classList.add("ocultarLetter");
+                        ceremoniales_l.classList.add("ocultarLetter");
+                        ceremoniales_e3.classList.add("ocultarLetter");
+                        ceremoniales_s.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
 
-                    ceremoniales_c.classList.add("ocultarLetter");
-                    ceremoniales_e1.classList.add("ocultarLetter");
-                    ceremoniales_r.classList.add("ocultarLetter");
-                    ceremoniales_e2.classList.add("ocultarLetter");
-                    ceremoniales_m.classList.add("ocultarLetter");
-                    ceremoniales_o.classList.add("ocultarLetter");
-                    ceremoniales_n.classList.add("ocultarLetter");
-                    ceremoniales_i.classList.add("ocultarLetter");
-                    ceremoniales_a.classList.add("ocultarLetter");
-                    ceremoniales_l.classList.add("ocultarLetter");
-                    ceremoniales_e3.classList.add("ocultarLetter");
-                    ceremoniales_s.classList.add("ocultarLetter");
-                    changeWord();
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -207,13 +233,18 @@ function selectLetter(letter) {
                 if (lengthWord === 0) {
                     console.log("You win this round")
                     document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        cerro_c.classList.add("ocultarLetter");
+                        cerro_e.classList.add("ocultarLetter");
+                        cerro_r1.classList.add("ocultarLetter");
+                        cerro_r2.classList.add("ocultarLetter");
+                        cerro_o.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
 
-                    cerro_c.classList.add("ocultarLetter");
-                    cerro_e.classList.add("ocultarLetter");
-                    cerro_r1.classList.add("ocultarLetter");
-                    cerro_r2.classList.add("ocultarLetter");
-                    cerro_o.classList.add("ocultarLetter");
-                    changeWord();
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -234,14 +265,20 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
 
-                    indi_i1.classList.add("ocultarLetter");
-                    indi_i2.classList.add("ocultarLetter");
-                    indi_n.classList.add("ocultarLetter");
-                    indi_d.classList.add("ocultarLetter");
+                        indi_i1.classList.add("ocultarLetter");
+                        indi_i2.classList.add("ocultarLetter");
+                        indi_n.classList.add("ocultarLetter");
+                        indi_d.classList.add("ocultarLetter");
 
-                    changeWord();
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -260,15 +297,21 @@ function selectLetter(letter) {
                 lengthWord--;
 
                 if (lengthWord === 0) {
-                    console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    console.log("You win this round");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
 
-                    kila_k.classList.add("ocultarLetter");
-                    kila_i.classList.add("ocultarLetter");
-                    kila_l.classList.add("ocultarLetter");
-                    kila_a.classList.add("ocultarLetter");
+                        kila_k.classList.add("ocultarLetter");
+                        kila_i.classList.add("ocultarLetter");
+                        kila_l.classList.add("ocultarLetter");
+                        kila_a.classList.add("ocultarLetter");
 
-                    changeWord();
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -296,19 +339,25 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
 
-                    medellin_m.classList.add("ocultarLetter");
-                    medellin_e1.classList.add("ocultarLetter");
-                    medellin_d.classList.add("ocultarLetter");
-                    medellin_e2.classList.add("ocultarLetter");
-                    medellin_l1.classList.add("ocultarLetter");
-                    medellin_l2.classList.add("ocultarLetter");
-                    medellin_i.classList.add("ocultarLetter");
-                    medellin_n.classList.add("ocultarLetter");
+                        medellin_m.classList.add("ocultarLetter");
+                        medellin_e1.classList.add("ocultarLetter");
+                        medellin_d.classList.add("ocultarLetter");
+                        medellin_e2.classList.add("ocultarLetter");
+                        medellin_l1.classList.add("ocultarLetter");
+                        medellin_l2.classList.add("ocultarLetter");
+                        medellin_i.classList.add("ocultarLetter");
+                        medellin_n.classList.add("ocultarLetter");
 
 
-                    changeWord();
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -338,22 +387,25 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
 
-                    primavera_p.classList.add("ocultarLetter");
-                    primavera_r1.classList.add("ocultarLetter");
-                    primavera_i.classList.add("ocultarLetter");
-                    primavera_m.classList.add("ocultarLetter");
-                    primavera_a1.classList.add("ocultarLetter");
-                    primavera_v.classList.add("ocultarLetter");
-                    primavera_e.classList.add("ocultarLetter");
-                    primavera_r2.classList.add("ocultarLetter");
-                    primavera_a2.classList.add("ocultarLetter");
+                        primavera_p.classList.add("ocultarLetter");
+                        primavera_r1.classList.add("ocultarLetter");
+                        primavera_i.classList.add("ocultarLetter");
+                        primavera_m.classList.add("ocultarLetter");
+                        primavera_a1.classList.add("ocultarLetter");
+                        primavera_v.classList.add("ocultarLetter");
+                        primavera_e.classList.add("ocultarLetter");
+                        primavera_r2.classList.add("ocultarLetter");
+                        primavera_a2.classList.add("ocultarLetter");
 
+                        changeWord();
+                        keyboardMode(false);
 
+                    }, 2000);
 
-
-                    changeWord();
                 }
                 console.log(lengthWord);
 
@@ -390,27 +442,28 @@ function selectLetter(letter) {
                 lengthWord--;
 
                 if (lengthWord === 0) {
-                    console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    console.log("You win this round");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                        valledeaburra_v.classList.add("ocultarLetter");
+                        valledeaburra_a1.classList.add("ocultarLetter");
+                        valledeaburra_l1.classList.add("ocultarLetter");
+                        valledeaburra_l2.classList.add("ocultarLetter");
+                        valledeaburra_e1.classList.add("ocultarLetter");
+                        valledeaburra_d.classList.add("ocultarLetter");
+                        valledeaburra_e2.classList.add("ocultarLetter");
+                        valledeaburra_a2.classList.add("ocultarLetter");
+                        valledeaburra_b.classList.add("ocultarLetter");
+                        valledeaburra_u.classList.add("ocultarLetter");
+                        valledeaburra_r1.classList.add("ocultarLetter");
+                        valledeaburra_r2.classList.add("ocultarLetter");
+                        valledeaburra_a3.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
 
-                    valledeaburra_v.classList.add("ocultarLetter");
-                    valledeaburra_a1.classList.add("ocultarLetter");
-                    valledeaburra_l1.classList.add("ocultarLetter");
-                    valledeaburra_l2.classList.add("ocultarLetter");
-                    valledeaburra_e1.classList.add("ocultarLetter");
-                    valledeaburra_d.classList.add("ocultarLetter");
-                    valledeaburra_e2.classList.add("ocultarLetter");
-                    valledeaburra_a2.classList.add("ocultarLetter");
-                    valledeaburra_b.classList.add("ocultarLetter");
-                    valledeaburra_u.classList.add("ocultarLetter");
-                    valledeaburra_r1.classList.add("ocultarLetter");
-                    valledeaburra_r2.classList.add("ocultarLetter");
-                    valledeaburra_a3.classList.add("ocultarLetter");
+                    }, 2000);
 
-
-
-
-                    changeWord();
                 }
                 console.log(lengthWord);
 
@@ -444,20 +497,26 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
+                    keyboardMode(true);
+                    setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
 
-                    tradicional_t.classList.add("ocultarLetter");
-                    tradicional_r.classList.add("ocultarLetter");
-                    tradicional_a1.classList.add("ocultarLetter");
-                    tradicional_d.classList.add("ocultarLetter");
-                    tradicional_i1.classList.add("ocultarLetter");
-                    tradicional_c.classList.add("ocultarLetter");
-                    tradicional_i2.classList.add("ocultarLetter");
-                    tradicional_o.classList.add("ocultarLetter");
-                    tradicional_n.classList.add("ocultarLetter");
-                    tradicional_a2.classList.add("ocultarLetter");
-                    tradicional_l.classList.add("ocultarLetter");
-                    changeWord();
+                        tradicional_t.classList.add("ocultarLetter");
+                        tradicional_r.classList.add("ocultarLetter");
+                        tradicional_a1.classList.add("ocultarLetter");
+                        tradicional_d.classList.add("ocultarLetter");
+                        tradicional_i1.classList.add("ocultarLetter");
+                        tradicional_c.classList.add("ocultarLetter");
+                        tradicional_i2.classList.add("ocultarLetter");
+                        tradicional_o.classList.add("ocultarLetter");
+                        tradicional_n.classList.add("ocultarLetter");
+                        tradicional_a2.classList.add("ocultarLetter");
+                        tradicional_l.classList.add("ocultarLetter");
+                        changeWord();
+                        keyboardMode(false);
+
+                    }, 2000);
+
                 }
                 console.log(lengthWord);
 
@@ -533,7 +592,7 @@ function addWrongLetter(letter) {
 function changeWord() {
     sunHangman.classList.remove("sunMovement1", "sunMovement2", "sunMovement3", "sunMovement4", "sunMovement5");
     moonHangman.classList.remove("moonMovement1", "moonMovement2", "moonMovement3", "moonMovement4", "moonMovement5");
-    
+
     if (wordsNotPlayed.length === 0) {
         sections[0].classList.add("ocultar");
         sections[3].classList.remove("ocultar");
@@ -701,7 +760,7 @@ function backToMenuEndGame(section) {
 }
 
 
-function keyboardMode(state){
+function keyboardMode(state) {
 
     document.getElementById("letterQ").disabled = state;
     document.getElementById("letterW").disabled = state;
@@ -730,5 +789,22 @@ function keyboardMode(state){
     document.getElementById("letterB").disabled = state;
     document.getElementById("letterN").disabled = state;
     document.getElementById("letterM").disabled = state;
+
+}
+
+
+function StartOrStop(estado) {
+    var audio = document.getElementById("soundTrack")
+    if (estado.id === "btnSonido2") {
+        estado.src = "img/btnSonidoOn.png";
+        estado.id = "btnSonido1"
+        audio.play();
+    } else {
+        estado.src = "img/btnSonidoOff.png";
+        estado.id = "btnSonido2"
+        audio.pause();
+    }
+
+
 
 }

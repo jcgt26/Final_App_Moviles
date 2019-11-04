@@ -41,8 +41,12 @@
         <div id="intro2">
             <img src="img/intro2.png" alt="">
         </div>
-
-
+        <div id="div2de3">
+            <img src="img/2de3.png" alt="">
+        </div>
+        <div id="divHomeBtnIntro2">
+            <input id="homeBtnIntro2" type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
+        </div>
         <div id="divSoundBtnIntro2">
             <input id="soundBtnIntro2" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button"
                 onclick="">
@@ -51,16 +55,26 @@
         <div id="divContinueBtnIntro2">
             <input id="continueBtnIntro2" type="image" src="img/btnSeguir.png" alt="Submit" class="button" onclick="">
         </div>
+        <div id="divAtrasBtnIntro2">
+            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button" onclick="">
+        </div>
 
 
     </section>
 
     <section id="intro3Screen" class="ocultar">
-
+        <div id="divHomeBtnIntro2">
+            <input id="homeBtnIntro2" type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
+        </div>
         <div id="intro3">
             <img src="img/intro3.png" alt="">
         </div>
-
+        <div id="div2de3">
+            <img src="img/3de3.png" alt="">
+        </div>
+        <div id="divAtrasBtnIntro2">
+            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button" onclick="">
+        </div>
 
         <div id="divSoundBtnIntro3">
             <input id="soundBtnIntro3" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button"
@@ -88,9 +102,13 @@
         </div>
 
         <div id="mainCharacter">
-            <img src="img/indi.png" alt="">
+            <img src="img/indi_p.png" alt="">
         </div>
 
+        <div id="tutorialPalabras">
+            <img src="img/minitutorial_palabras.gif" alt="">
+        </div>
+        
         <div id="divPlayBtn">
             <input id="playHangmanBtn" type="image" src="img/btnJugar.png" alt="Submit" class="button"
                 onclick="changePage('gameScreen_hangMan', 'mainScreen_hangMan')">
@@ -102,6 +120,10 @@
 
         <div id="divSoundBtn">
             <input id="soundBtnHangman" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button" onclick="">
+        </div>
+
+        <div id="divHomeBtn">
+            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
         </div>
 
     </section>
@@ -122,7 +144,7 @@
         </div>
 
         <div id="divBackBtnHangManGameOver">
-            <input id="backBtnHangmanGameOver" type="image" src="img/btnAtras.png" alt="Submit" class="button"
+            <input id="backBtnHangmanGameOver" type="image" src="img/btnHome.png" alt="Submit" class="button"
                 onclick="backToMenuEndGame('2');">
         </div>
 
@@ -149,7 +171,7 @@
         </div>
 
         <div id="divBackBtnHangManGameWon">
-            <input id="backBtnHangmanGameWon" type="image" src="img/btnAtras.png" alt="Submit" class="button"
+            <input id="backBtnHangmanGameWon" type="image" src="img/btnHome.png" alt="Submit" class="button"
                 onclick="backToMenuEndGame('3')">
         </div>
 
@@ -163,7 +185,7 @@
 
 
         <div id="adivinaBackground">
-            <img src="img/adivinaBackground.png" alt="">
+            <img id="imgBackGroundHangmanGame" src="img/adivinaBackground.png" alt="">
         </div>
 
         <div id="tltPalabras">
@@ -171,7 +193,7 @@
         </div>
 
         <div id="btnHomeHangman">
-            <input type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
+            <input type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="changePage('mainScreen_hangMan', 'gameScreen_hangMan')">
         </div>
 
         <div id="btnSoundHangman">
@@ -200,87 +222,114 @@
         <div id="topicBarHangman">
             <img id="level" src="img/level1.png" alt="">
         </div>
-        
+
         <div id="letraQ">
-            <input  id="letterQ" type="image" src="img/letraQ.png" alt="Submit" class="button" onclick="selectLetter('q');">
+            <input id="letterQ" type="image" src="img/letraQ.png" alt="Submit" class="button"
+                onclick="selectLetter('q');">
         </div>
         <div id="letraW">
-            <input  id="letterW" type="image" src="img/letraW.png" alt="Submit" class="button" onclick="selectLetter('w');">
+            <input id="letterW" type="image" src="img/letraW.png" alt="Submit" class="button"
+                onclick="selectLetter('w');">
         </div>
         <div id="letraE">
-            <input  id="letterE" type="image" src="img/letraE.png" alt="Submit" class="button" onclick="selectLetter('e');">
+            <input id="letterE" type="image" src="img/letraE.png" alt="Submit" class="button"
+                onclick="selectLetter('e');">
         </div>
         <div id="letraR">
-            <input  id="letterR" type="image" src="img/letraR.png" alt="Submit" class="button" onclick="selectLetter('r');">
+            <input id="letterR" type="image" src="img/letraR.png" alt="Submit" class="button"
+                onclick="selectLetter('r');">
         </div>
         <div id="letraT">
-            <input  id="letterT" type="image" src="img/letraT.png" alt="Submit" class="button" onclick="selectLetter('t');">
+            <input id="letterT" type="image" src="img/letraT.png" alt="Submit" class="button"
+                onclick="selectLetter('t');">
         </div>
         <div id="letraY">
-            <input  id="letterY" type="image" src="img/letraY.png" alt="Submit" class="button" onclick="selectLetter('y');">
+            <input id="letterY" type="image" src="img/letraY.png" alt="Submit" class="button"
+                onclick="selectLetter('y');">
         </div>
         <div id="letraU">
-            <input  id="letterU" type="image" src="img/letraU.png" alt="Submit" class="button" onclick="selectLetter('u');">
+            <input id="letterU" type="image" src="img/letraU.png" alt="Submit" class="button"
+                onclick="selectLetter('u');">
         </div>
         <div id="letraI">
-            <input  id="letterI" type="image" src="img/letraI.png" alt="Submit" class="button" onclick="selectLetter('i');">
+            <input id="letterI" type="image" src="img/letraI.png" alt="Submit" class="button"
+                onclick="selectLetter('i');">
         </div>
         <div id="letraO">
-            <input  id="letterO" type="image" src="img/letraO.png" alt="Submit" class="button" onclick="selectLetter('o');">
+            <input id="letterO" type="image" src="img/letraO.png" alt="Submit" class="button"
+                onclick="selectLetter('o');">
         </div>
         <div id="letraP">
-            <input  id="letterP" type="image" src="img/letraP.png" alt="Submit" class="button" onclick="selectLetter('p');">
+            <input id="letterP" type="image" src="img/letraP.png" alt="Submit" class="button"
+                onclick="selectLetter('p');">
         </div>
         <div id="letraA">
-            <input  id="letterA" type="image" src="img/letraA.png" alt="Submit" class="button" onclick="selectLetter('a');">
+            <input id="letterA" type="image" src="img/letraA.png" alt="Submit" class="button"
+                onclick="selectLetter('a');">
         </div>
         <div id="letraS">
-            <input  id="letterS" type="image" src="img/letraS.png" alt="Submit" class="button" onclick="selectLetter('s');">
+            <input id="letterS" type="image" src="img/letraS.png" alt="Submit" class="button"
+                onclick="selectLetter('s');">
         </div>
         <div id="letraD">
-            <input  id="letterD" type="image" src="img/letraD.png" alt="Submit" class="button" onclick="selectLetter('d');">
+            <input id="letterD" type="image" src="img/letraD.png" alt="Submit" class="button"
+                onclick="selectLetter('d');">
         </div>
         <div id="letraF">
-            <input  id="letterF" type="image" src="img/letraF.png" alt="Submit" class="button" onclick="selectLetter('f');">
+            <input id="letterF" type="image" src="img/letraF.png" alt="Submit" class="button"
+                onclick="selectLetter('f');">
         </div>
         <div id="letraG">
-            <input  id="letterG" type="image" src="img/letraG.png" alt="Submit" class="button" onclick="selectLetter('g');">
+            <input id="letterG" type="image" src="img/letraG.png" alt="Submit" class="button"
+                onclick="selectLetter('g');">
         </div>
         <div id="letraH">
-            <input  id="letterH" type="image" src="img/letraH.png" alt="Submit" class="button" onclick="selectLetter('h');">
+            <input id="letterH" type="image" src="img/letraH.png" alt="Submit" class="button"
+                onclick="selectLetter('h');">
         </div>
         <div id="letraJ">
-            <input  id="letterJ" type="image" src="img/letraJ.png" alt="Submit" class="button" onclick="selectLetter('j');">
+            <input id="letterJ" type="image" src="img/letraJ.png" alt="Submit" class="button"
+                onclick="selectLetter('j');">
         </div>
         <div id="letraK">
-            <input  id="letterK" type="image" src="img/letraK.png" alt="Submit" class="button" onclick="selectLetter('k');">
+            <input id="letterK" type="image" src="img/letraK.png" alt="Submit" class="button"
+                onclick="selectLetter('k');">
         </div>
         <div id="letraL">
-            <input  id="letterL" type="image" src="img/letraL.png" alt="Submit" class="button" onclick="selectLetter('l');">
+            <input id="letterL" type="image" src="img/letraL.png" alt="Submit" class="button"
+                onclick="selectLetter('l');">
         </div>
         <div id="letraNN">
-            <input  id="letterNN" type="image" src="img/letraNN.png" alt="Submit" class="button" onclick="selectLetter('ñ');">
+            <input id="letterNN" type="image" src="img/letraNN.png" alt="Submit" class="button"
+                onclick="selectLetter('ñ');">
         </div>
         <div id="letraZ">
-            <input  id="letterZ" type="image" src="img/letraZ.png" alt="Submit" class="button" onclick="selectLetter('z');">
+            <input id="letterZ" type="image" src="img/letraZ.png" alt="Submit" class="button"
+                onclick="selectLetter('z');">
         </div>
         <div id="letraX">
-            <input  id="letterX" type="image" src="img/letraX.png" alt="Submit" class="button" onclick="selectLetter('x');">
+            <input id="letterX" type="image" src="img/letraX.png" alt="Submit" class="button"
+                onclick="selectLetter('x');">
         </div>
         <div id="letraC">
-            <input  id="letterC" type="image" src="img/letraC.png" alt="Submit" class="button" onclick="selectLetter('c');">
+            <input id="letterC" type="image" src="img/letraC.png" alt="Submit" class="button"
+                onclick="selectLetter('c');">
         </div>
         <div id="letraV">
-            <input  id="letterV" type="image" src="img/letraV.png" alt="Submit" class="button" onclick="selectLetter('v');">
+            <input id="letterV" type="image" src="img/letraV.png" alt="Submit" class="button"
+                onclick="selectLetter('v');">
         </div>
         <div id="letraB">
-            <input  id="letterB" type="image" src="img/letraB.png" alt="Submit" class="button" onclick="selectLetter('b');">
+            <input id="letterB" type="image" src="img/letraB.png" alt="Submit" class="button"
+                onclick="selectLetter('b');">
         </div>
         <div id="letraN">
-            <input  id="letterN" type="image" src="img/letraN.png" alt="Submit" class="button" onclick="selectLetter('n');">
+            <input id="letterN" type="image" src="img/letraN.png" alt="Submit" class="button"
+                onclick="selectLetter('n');">
         </div>
         <div id="letraM">
-            <input  id="letterM" type="image" src="img/letraM.png" alt="Submit" class="button" onclick="selectLetter('m');">
+            <input id="letterM" type="image" src="img/letraM.png" alt="Submit" class="button"
+                onclick="selectLetter('m');">
         </div>
 
 
@@ -308,7 +357,7 @@
         </section>
 
         <section id="wordceremoniales">
-            <img id="imgWordceremoniales" src="img/palabraCeremoniales.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordceremoniales" src="img/palabraCeremoniales.png" alt="" class="ocultarLetter">
             <img id="ceremoniales_c" src="img/letterC.png" alt="" class="ocultarLetter">
             <img id="ceremoniales_e1" src="img/letterE.png" alt="" class="ocultarLetter">
             <img id="ceremoniales_r" src="img/letterR.png" alt="" class="ocultarLetter">
@@ -326,7 +375,7 @@
 
 
         <section id="wordCerro">
-            <img id="imgWordcerro" src="img/palabraCerro.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordcerro" src="img/palabraCerro.png" alt="" class="ocultarLetter">
             <img id="cerro_c" src="img/letterC.png" alt="" class="ocultarLetter">
             <img id="cerro_e" src="img/letterE.png" alt="" class="ocultarLetter">
             <img id="cerro_r1" src="img/letterR.png" alt="" class="ocultarLetter">
@@ -335,7 +384,7 @@
         </section>
 
         <section id="wordIndi">
-            <img id="imgWordindi" src="img/palabraIndi.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordindi" src="img/palabraIndi.png" alt="" class="ocultarLetter">
             <img id="indi_i1" src="img/letterI.png" alt="" class="ocultarLetter">
             <img id="indi_n" src="img/letterN.png" alt="" class="ocultarLetter">
             <img id="indi_d" src="img/letterD.png" alt="" class="ocultarLetter">
@@ -343,7 +392,7 @@
         </section>
 
         <section id="wordKila">
-            <img id="imgWordkila" src="img/palabraKila.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordkila" src="img/palabraKila.png" alt="" class="ocultarLetter">
             <img id="kila_k" src="img/letterK.png" alt="" class="ocultarLetter">
             <img id="kila_i" src="img/letterI.png" alt="" class="ocultarLetter">
             <img id="kila_l" src="img/letterL.png" alt="" class="ocultarLetter">
@@ -351,7 +400,7 @@
         </section>
 
         <section id="wordMedellin">
-            <img id="imgWordmedellin" src="img/palabraMedellin.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordmedellin" src="img/palabraMedellin.png" alt="" class="ocultarLetter">
             <img id="medellin_m" src="img/letterM.png" alt="" class="ocultarLetter">
             <img id="medellin_e1" src="img/letterE.png" alt="" class="ocultarLetter">
             <img id="medellin_d" src="img/letterD.png" alt="" class="ocultarLetter">
@@ -363,7 +412,7 @@
         </section>
 
         <section id="wordPrimavera">
-            <img id="imgWordprimavera" src="img/palabraPrimavera.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordprimavera" src="img/palabraPrimavera.png" alt="" class="ocultarLetter">
             <img id="primavera_p" src="img/letterP.png" alt="" class="ocultarLetter">
             <img id="primavera_r1" src="img/letterR.png" alt="" class="ocultarLetter">
             <img id="primavera_i" src="img/letterI.png" alt="" class="ocultarLetter">
@@ -376,8 +425,7 @@
         </section>
 
         <section id="wordValledeaburra">
-            <img id="imgWordvalledeaburra" src="img/palabraValleDeAburra.png" alt=""
-                class="imgCurrentWord ocultarLetter">
+            <img id="imgWordvalledeaburra" src="img/palabraValleDeAburra.png" alt="" class="ocultarLetter">
             <img id="valledeaburra_v" src="img/letterV.png" alt="" class="ocultarLetter">
             <img id="valledeaburra_a1" src="img/letterA.png" alt="" class="ocultarLetter">
             <img id="valledeaburra_l1" src="img/letterL.png" alt="" class="ocultarLetter">
@@ -395,7 +443,7 @@
 
 
         <section id="wordTradicional">
-            <img id="imgWordtradicional" src="img/palabraTradicional.png" alt="" class="imgCurrentWord ocultarLetter">
+            <img id="imgWordtradicional" src="img/palabraTradicional.png" alt="" class="ocultarLetter">
             <img id="tradicional_t" src="img/letterT.png" alt="" class="ocultarLetter">
             <img id="tradicional_r" src="img/letterR.png" alt="" class="ocultarLetter">
             <img id="tradicional_a1" src="img/letterA.png" alt="" class="ocultarLetter">
@@ -523,7 +571,7 @@
     <!-- Puzzle ending -->
 
 
-
+    <audio id="soundTrack" src="audio/musicadefondo.mp3" autoplay="true" loop="true"></audio>
     <script src="js/main.js"></script>
     <script src="js/concentrate.js"></script>
     <script src="js/adivina.js"></script>
