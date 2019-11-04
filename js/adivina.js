@@ -232,9 +232,9 @@ function selectLetter(letter) {
 
                 if (lengthWord === 0) {
                     console.log("You win this round")
-                    document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
                     keyboardMode(true);
                     setTimeout(function () {
+                        document.getElementById("imgWord" + currentWord).classList.add("ocultarLetter");
                         cerro_c.classList.add("ocultarLetter");
                         cerro_e.classList.add("ocultarLetter");
                         cerro_r1.classList.add("ocultarLetter");
