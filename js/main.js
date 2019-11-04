@@ -3,48 +3,60 @@ function changePage(idIn, idOut) {
     document.getElementById(idIn).classList.remove("ocultar");
 }
 var piezas=document.getElementsByClassName('movil');
-var tamWidth=[134,134,134,134,134,134,134,134,134,134,134,134,134,134,134,134];
-var tamHeight=[135,135,135,135,135,135,135,135,135,135,135,135,135,135,135,135];
+var tamWidth=[114,111,111,112,114,111,111,112,114,111,111,112,114,111,111,112];
+var tamHeight=[110,110,110,110,110,110,110,110,110,110,110,110,110,110,110,110];
 for(var i=0;i<piezas.length;i++){
     piezas[i].setAttribute("width", tamWidth[i]);
     piezas[i].setAttribute("height",tamHeight[i]);
         if(i==0){
-            piezas[i].setAttribute("x",590);
+            piezas[i].setAttribute("x",520);
             piezas[i].setAttribute("y", 35);
         }else if(i==1){
-            piezas[i].setAttribute("x",735);
+            piezas[i].setAttribute("x",642);
             piezas[i].setAttribute("y", 35);
         }else if(i==2){
-            piezas[i].setAttribute("x", 880);
+            piezas[i].setAttribute("x", 767);
             piezas[i].setAttribute("y", 35);
         }else if(i==3){
-            piezas[i].setAttribute("x",590);
-            piezas[i].setAttribute("y", 180);
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 35);
         }else if(i==4){
-            piezas[i].setAttribute("x",735);
-            piezas[i].setAttribute("y", 180); 
+            piezas[i].setAttribute("x",520);
+            piezas[i].setAttribute("y", 163); 
         }else if(i==5){
-            piezas[i].setAttribute("x",880);
-            piezas[i].setAttribute("y", 180);
+            piezas[i].setAttribute("x",642);
+            piezas[i].setAttribute("y", 163);
         }else if(i==6){
-            piezas[i].setAttribute("x",590);
-            piezas[i].setAttribute("y", 325);
+            piezas[i].setAttribute("x",767);
+            piezas[i].setAttribute("y", 163);
         }else if(i==7){
-            piezas[i].setAttribute("x",735);
-            piezas[i].setAttribute("y", 325);
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 163);
         }else if(i==8){
-            piezas[i].setAttribute("x",880);
-            piezas[i].setAttribute("y", 325);
+            piezas[i].setAttribute("x",520);
+            piezas[i].setAttribute("y", 290);
         }else if(i==9){
-            piezas[i].setAttribute("x",590);
-            piezas[i].setAttribute("y", 470);
+            piezas[i].setAttribute("x",642);
+            piezas[i].setAttribute("y", 290);
         }else if(i==10){
-            piezas[i].setAttribute("x",735);
-            piezas[i].setAttribute("y", 470);
+            piezas[i].setAttribute("x",767);
+            piezas[i].setAttribute("y", 290);
         }else if(i==11){
-            piezas[i].setAttribute("x",880);
-            piezas[i].setAttribute("y", 470);
-        }          
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 290);
+        }else if(i==12){
+            piezas[i].setAttribute("x",520);
+            piezas[i].setAttribute("y", 418);
+        }else if(i==13){
+            piezas[i].setAttribute("x",642);
+            piezas[i].setAttribute("y", 418);
+        }else if(i==14){
+            piezas[i].setAttribute("x",767);
+            piezas[i].setAttribute("y", 418);
+        }else if(i==15){
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 418);
+        }         
     piezas[i].addEventListener("touchstart",seleccionarElemento,false);
 }
 var elementSelect=0;
@@ -95,8 +107,8 @@ function reordenar(evt){
     return entrono.lastChild.firstChild;
 
 }
-var origX=[40,175,308,442,40,175,308,442,40,175,308,442,40,175,308,442,];
-var origY=[35,35,35,35,170,170,170,170,305,305,305,305,440,440,440,440];
+var origX=[53,164,275,383,53,164,274,382,53,164,275,382,53,164,274,382];
+var origY=[65,65,65,65,174,174,174,174,285,285,285,285,392,392,392,392];
 function iman(){
     for(var i=0;i<piezas.length;i++){
         if(Math.abs(currentPosx-origX[i])<15 && Math.abs(currentPosy-origY[i])<15){
@@ -118,7 +130,7 @@ function testing(){
         }
 
     }
-    if(bien_ubicada==14){
+    if(bien_ubicada==16){
         changePage("GanarPuzzle", "DevelopPuzzle");
     }
 }
