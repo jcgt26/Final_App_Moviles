@@ -2,6 +2,7 @@ function changePage(idIn, idOut) {
     document.getElementById(idOut).classList.add("ocultar");
     document.getElementById(idIn).classList.remove("ocultar");
 }
+
 var piezas=document.getElementsByClassName('movil');
 var tamWidth=[114,111,111,112,114,111,111,112,114,111,111,112,114,111,111,112];
 var tamHeight=[110,110,110,110,110,110,110,110,110,110,110,110,110,110,110,110];

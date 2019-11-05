@@ -40,14 +40,14 @@
     padding: 0;
     text-align: center;
     height: 100%;
-    background-image: url('../img/Repite.png');
+    /* background-image: url('../img/Repite.png'); */
 }
 .backgroundSection{
     margin: 0;
     padding: 0;
     text-align: center;
     height: 100%;
-    background-image: url('../img/Repite.png');
+    /* background-image: url('../img/Repite.png'); */
 }
 .history1{
     width: 100%;
@@ -139,7 +139,7 @@
     height: 578px;
 }
 #DevelopPuzzle{
-    background-image: url(../img/background.png);
+    /* background-image: url(../img/background.png); */
     background-size:cover;
     position: relative;
     overflow: hidden;
