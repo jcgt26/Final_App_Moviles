@@ -73,8 +73,9 @@ function shuffle(array) {
 }
 
 function flip(element){
-   changeClassFlip(element);
-   if(cardStack.length <= 2){
+   
+   if(cardStack.length <= 1){
+    changeClassFlip(element);
     element.classList.add('flipInY');
     cardStack.push(element);
     reveal(element)
@@ -96,22 +97,24 @@ function check(){
             let id2 =cards_reference[card2.id.substring(6)][0];
             if(id1 === id2){
                 
-                cardStack.pop();
-                cardStack.pop();
+
                 card1.onclick = null;
                 card2.onclick = null;
                 cards_reference[card1.id.substring(6)][1] = true;
                 cards_reference[card2.id.substring(6)][1] = true;
                 count_to_win = count_to_win + 2;
+                cardStack.pop();
+                cardStack.pop();
                 win();
             }
             else{
-                cardStack.pop();
-                cardStack.pop();
+
                 card1.classList.remove(id1);
                 card2.classList.remove(id2);
                 card1.classList.remove('flipInY');
                 card2.classList.remove('flipInY');
+                cardStack.pop();
+                cardStack.pop();
                 
                 
             }
@@ -134,7 +137,7 @@ function reveal(card){
     
 }
 function win(){
-    if(count_to_win === 2){
+    if(count_to_win === 14){
         console.log("WIN!!!!!!!!");
         showSection(1);
     }else{
