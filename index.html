@@ -45,18 +45,18 @@
             <img src="img/2de3.png" alt="">
         </div>
         <div id="divHomeBtnIntro2">
-            <input id="homeBtnIntro2" type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
+            <input id="homeBtnIntro2" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
         <div id="divSoundBtnIntro2">
-            <input id="soundBtnIntro2" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button"
+            <input id="soundBtnIntro2" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button removeBorder"
                 onclick="">
         </div>
 
         <div id="divContinueBtnIntro2">
-            <input id="continueBtnIntro2" type="image" src="img/btnSeguir.png" alt="Submit" class="button" onclick="">
+            <input id="continueBtnIntro2" type="image" src="img/btnSeguir.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
         <div id="divAtrasBtnIntro2">
-            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button" onclick="">
+            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
 
 
@@ -73,16 +73,16 @@
             <img src="img/3de3.png" alt="">
         </div>
         <div id="divAtrasBtnIntro2">
-            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button" onclick="">
+            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
 
         <div id="divSoundBtnIntro3">
-            <input id="soundBtnIntro3" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button"
+            <input id="soundBtnIntro3" type="image" src="img/btnSonidoIntro2.png" alt="Submit" class="button removeBorder"
                 onclick="">
         </div>
 
         <div id="divContinueBtnIntro3">
-            <input id="continueBtnIntro3" type="image" src="img/btnSeguir.png" alt="Submit" class="button" onclick="">
+            <input id="continueBtnIntro3" type="image" src="img/btnSeguir.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
 
     </section>
@@ -108,22 +108,23 @@
         <div id="tutorialPalabras">
             <img src="img/minitutorial_palabras.gif" alt="">
         </div>
-        
+
         <div id="divPlayBtn">
-            <input id="playHangmanBtn" type="image" src="img/btnJugar.png" alt="Submit" class="button"
+            <input id="playHangmanBtn" type="image" src="img/btnJugar.png" alt="Submit" class="button removeBorder"
                 onclick="changePage('gameScreen_hangMan', 'mainScreen_hangMan')">
         </div>
 
         <div id="divBackBtn">
-            <input id="backBtnHangman" type="image" src="img/btnAtras.png" alt="Submit" class="button" onclick="">
+            <input id="backBtnHangman" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
 
         <div id="divSoundBtn">
-            <input id="soundBtnHangman" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button" onclick="">
+            <input id="btnSonidoOnMainHang" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button removeBorder"
+                onclick="StartOrStop(this)" value="On">
         </div>
 
         <div id="divHomeBtn">
-            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="">
+            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder" onclick="">
         </div>
 
     </section>
@@ -139,18 +140,18 @@
         </div>
 
         <div id="divPlayAgainBtnGameOver">
-            <input id="playAgainHangmanBtn" type="image" src="img/btnReintentarlo.png" alt="Submit" class="button"
+            <input id="playAgainHangmanBtn" type="image" src="img/btnReintentarlo.png" alt="Submit" class="button removeBorder"
                 onclick="playAgain('2');">
         </div>
 
         <div id="divBackBtnHangManGameOver">
-            <input id="backBtnHangmanGameOver" type="image" src="img/btnHome.png" alt="Submit" class="button"
+            <input id="backBtnHangmanGameOver" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"
                 onclick="backToMenuEndGame('2');">
         </div>
 
         <div id="divSoundBtnHangManGameOver">
-            <input id="soundBtnHangmanGameOver" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button"
-                onclick="">
+            <input id="soundBtnHangmanGameOver" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button removeBorder"
+                onclick="StartOrStop(this)" value="On">
         </div>
 
     </section>
@@ -167,17 +168,17 @@
 
         <div id="divPlayAgainBtnGameWon">
             <input id="playAgainHangmanBtnGameWon" type="image" src="img/btnReintentarlo.png" alt="Submit"
-                class="button" onclick="playAgain('3');">
+                class="button removeBorder" onclick="playAgain('3');">
         </div>
 
         <div id="divBackBtnHangManGameWon">
-            <input id="backBtnHangmanGameWon" type="image" src="img/btnHome.png" alt="Submit" class="button"
+            <input id="backBtnHangmanGameWon" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"
                 onclick="backToMenuEndGame('3')">
         </div>
 
         <div id="divSoundBtnHangManGameWon">
-            <input id="soundBtnHangmanGameWon" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button"
-                onclick="">
+            <input id="soundBtnHangmanGameWon" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button removeBorder"
+                onclick="StartOrStop(this)" value="On">
         </div>
     </section>
 
@@ -193,11 +194,13 @@
         </div>
 
         <div id="btnHomeHangman">
-            <input type="image" src="img/btnHome.png" alt="Submit" class="button" onclick="changePage('mainScreen_hangMan', 'gameScreen_hangMan')">
+            <input type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"
+                onclick="changePage('mainScreen_hangMan', 'gameScreen_hangMan')">
         </div>
 
         <div id="btnSoundHangman">
-            <input type="image" src="img/btnSoundOnHangman.png" alt="Submit" class="button" onclick="">
+            <input id="btnSonidoOnGameHangMan" type="image" src="img/btnSoundOnHangman.png" alt="Submit" class="button removeBorder"
+                onclick="StartOrStop(this)" value="On">
         </div>
 
         <div id="eclipseHangman">
@@ -337,7 +340,7 @@
         <section id="wordAburraes">
             <img id="imgWordaburraes" src="img/palabraAburraes.png" alt="" class="ocultarLetter">
             <img id="aburraes_a1" src="img/letterA.png" alt="" class="ocultarLetter">
-            <img id="aburraes_a2" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="aburraes_a2" src="img/atilde.png" alt="" class="ocultarLetter">
             <img id="aburraes_b" src="img/letterB.png" alt="" class="ocultarLetter">
             <img id="aburraes_u" src="img/letterU.png" alt="" class="ocultarLetter">
             <img id="aburraes_r1" src="img/letterR.png" alt="" class="ocultarLetter">
@@ -407,7 +410,7 @@
             <img id="medellin_e2" src="img/letterE.png" alt="" class="ocultarLetter">
             <img id="medellin_l1" src="img/letterL.png" alt="" class="ocultarLetter">
             <img id="medellin_l2" src="img/letterL.png" alt="" class="ocultarLetter">
-            <img id="medellin_i" src="img/letterI.png" alt="" class="ocultarLetter">
+            <img id="medellin_i" src="img/itilde.png" alt="" class="ocultarLetter">
             <img id="medellin_n" src="img/letterN.png" alt="" class="ocultarLetter">
         </section>
 
@@ -438,7 +441,7 @@
             <img id="valledeaburra_u" src="img/letterU.png" alt="" class="ocultarLetter">
             <img id="valledeaburra_r1" src="img/letterR.png" alt="" class="ocultarLetter">
             <img id="valledeaburra_r2" src="img/letterR.png" alt="" class="ocultarLetter">
-            <img id="valledeaburra_a3" src="img/letterA.png" alt="" class="ocultarLetter">
+            <img id="valledeaburra_a3" src="img/atilde.png" alt="" class="ocultarLetter">
         </section>
 
 
@@ -457,6 +460,8 @@
             <img id="tradicional_l" src="img/letterL.png" alt="" class="ocultarLetter">
         </section>
 
+        
+
 
         <div id="containerWrongLetters">
             <div id="container2">
@@ -466,7 +471,9 @@
 
     </section>
 
-
+    <!-- <section>
+        <iframe src="https://crackmayo.github.io/PalabrasCruzadas/" width="1024" height="768" frameborder="0" ></iframe>
+    </section> -->
 
     <!-- Adivina Ending -->
 
