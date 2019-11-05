@@ -34,7 +34,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
@@ -89,7 +89,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
@@ -135,7 +135,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
@@ -172,7 +172,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
@@ -219,7 +219,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
@@ -251,7 +251,7 @@ section{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('../img/background.png');
+    /* background-image: url('../img/background.png'); */
     background-position: center;
     overflow:hidden; 
     background-attachment: fixed;
