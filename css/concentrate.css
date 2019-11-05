@@ -1,6 +1,9 @@
 
+body{
+    background-image: url('../img/Repite-min.png');
+}
 /* -----------Section Concentrate-------------- */
-.concentrate_1{
+.concentrate{
     position: relative;
     width:100%;
     height:100%;
@@ -48,29 +51,26 @@
 /* -----------------Section 1------------------------- */
 .killa_intro{
     position: fixed;
-    top: 15%;
-    right: 7%;
-    width: 212px;
-    height: 570px;
-    background: url("../img/Kila2-min.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    bottom: 0%;
+    right: 3%;
+
 }
 
 .concentrate_text{
     position: fixed;
     top: 13%;
-    left: 18%;
-    width: 485px;
+    left: 19%;
+    width: 547px;
     height: 364px;
     background: url("../img/concentrate-min.png") no-repeat;
     background-position: center center;
     background-size: 100%;
 }
+
 .btn_jugar{
     position: fixed;
     bottom: 10%;
-    left: 31%;
+    left: 34%;
     width: 200px;
     height: 220px;
     background: url("../img/Jugar_btn-min.png") no-repeat;
@@ -89,14 +89,29 @@
     width: 140px;
     height: 150px; 
 }
-
+.btn_home{
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    width: 82px;
+    height:95px;
+    background: url("../img/Concentrate/home_bt.png") no-repeat;
+}
+.btn_on{
+    position: fixed;
+    top: 3%;
+    right:  5%;
+    width: 82px;
+    height:95px;
+    background: url("../img/Concentrate/on_bt.png") no-repeat;
+}
 .btn_atras{
     position: fixed;
-    bottom: 25%;
-    left: 10%;
-    width: 78px;
-    height:87px;
-    background: url("../img/atras_btn-min.png") no-repeat;
+    bottom: 5%;
+    left: 5%;
+    width: 82px;
+    height:95px;
+    background: url("../img/volver_bt.png") no-repeat;
   
 }
 .btn_sonido{
@@ -122,12 +137,24 @@
 .ganaste{
     position: fixed;
     top: 13%;
-    left: 12%;
+    left: 15%;
     width: 598px;
     height: 578px;
     background: url("../img/ganaste_concentrate-min.png") no-repeat;
     background-position: center center;
     background-size: 100%;
+}
+
+#killa_ganaste{
+    position: fixed;
+    bottom: 0%;
+    right: 4%;
+}
+#minitutorial{
+    position: fixed;
+    right: 5%;
+    top: 18%;
+    /* background-color: no; */
 }
 
 /* ----------------Tarjetas------------------- */
@@ -145,13 +172,13 @@
 
 .tarjeta{
     margin-right: 5px !important;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: inline-block;
     }
 
 .tarjeta.tarjeta_reves{
-    width: 110px;
-    height: 159px;
+    width: 127px;
+    height: 185px;
     background-color: red;
     background: url("../img/Concentrate/carta1.png ") no-repeat;
     background-repeat:no-repeat;
@@ -160,25 +187,60 @@
 }
 
 .tarjeta.tarjeta_reves.cruz{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_cruz.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.iglesia{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_iglesia.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.jesus{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_jesus.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.metrocable{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_metrocable.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.puente{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_puente.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.silla{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_silla.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .tarjeta.tarjeta_reves.virgen{
+    width: 127px;
+    height: 185px;
     background: url("../img/carta_virgen.png ") no-repeat;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 
 /* s */
@@ -199,6 +261,8 @@
     position: fixed;
     top: 17%;
     left: 5%;
+    width: 90%;
+    height: 550px;
 }
 #titulo_juego_concentrate{
     position: fixed;
@@ -211,4 +275,24 @@
 #boton_on_concentrate{
     position: fixed;
     right: 5%;
+}
+
+.btns_menu{
+    position: fixed;
+    top: 38%;
+}
+#escoger_text{
+    position: fixed;
+    width: 622px;
+    top: 20%;
+    left: 24%;
+}
+#btn_palabras.btns_menu{
+    left: 15%;
+}
+#btn_concentrate.btns_menu{
+    left: 40%;
+}
+#btn_rompecabezas.btns_menu{
+    right: 15%;
 }

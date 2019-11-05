@@ -160,35 +160,46 @@
     </section>
     <!-- Adivina Ending -->
 
-
+    <section class="elegir_juego ocultar">
+            <span class="btn_home"></span>
+            <span class="btn_on"></span>
+            <img src="img/escoger_txt.png" id="escoger_text" alt="">
+            <img src="img/palabras_bt.png" id="btn_palabras" class = "btns_menu"alt="">
+            <img src="img/concentrate_bt.png" id="btn_concentrate" class = "btns_menu"alt="">
+            <img src="img/rompecabezas_bt.png" id="btn_rompecabezas" class = "btns_menu"alt="">
+    </section>
     <!-- CONCENTRATE -->
-    <section class="concentrate_1 ocultar">
-        <span class="killa_intro"></span>
-        <span class="btn_atras"></span>
-        <span class="btn_sonido"></span>
-
+    <!-- <section id="0" class="concentrate ocultar "> -->
+        <!-- <span class="killa_intro"></span> -->
         <!-- INTRO -->
-        <section class="intro ocultar">
+        <section id="0" class="intro ocultar ">
+            <img src="img/kila_c.png" alt="" class="killa_intro">
+            <img src="img/minitutorial_concentrate.gif" id="minitutorial">
+            <span class="btn_atras"></span>
+            <span class="btn_home"></span>
+            <span class="btn_on"></span>
             <span class="btn_jugar"></span>
             <span class="concentrate_text"></span>
         </section>
         <!-- GANAR -->
-        <section class="ganar ocultar">
+        <section id="1" class="ganar ocultar ">
             <span class="ganaste "></span>
+            <span class="btn_home"></span>
+            <img id="killa_ganaste" src="img/kila2.png">
+            <span class="btn_on"></span>
             <span class="btn_jugar ganar"></span>
         </section>
         <!-- PERDER -->
-        <section class="perder ocultar">
+        <!-- <section id="2" class="perder ocultar">
             <span class="perdiste"></span>
             <span class="btn_jugar perder"></span>
-        </section>
-    </section>
+        </section> -->
+    <!-- </section> -->
 
-    <section id="game_concentrate">
-        <!-- <div class="fondo_concentrate"></div> -->
+    <section id="2" class="">
         <img src="img/Concentrate/concentrate_titulo.png" id="titulo_juego_concentrate" alt="">
-        <img src="img/Concentrate/home_bt.png" id="boton_home_concentrate" alt="">
-        <img src="img/Concentrate/on_bt.png" id="boton_on_concentrate" alt="">
+        <img src="img/Concentrate/home_bt.png" id="boton_home_concentrate" alt="" onclick="showSection(1)">
+        <img src="img/Concentrate/on_bt.png" id="boton_on_concentrate" alt="" onclick="">
         <img src="img/Concentrate/fondo_concentrate.png" alt="" id="fondo_concentrate">
         <div class="wrap">
             <div class="tarjeta-wrap ">
