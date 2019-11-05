@@ -13,7 +13,7 @@
 
 <body>
 
-    <section class="backgroundInitial ocultar">
+    <section class="backgroundInitial ">
         <div class="nameApp">
             <img src="img/Título.png" class="titule"></img>
         </div>
@@ -22,8 +22,8 @@
             <input type="image" src="img/Jugar_btn.png" class="playPrincipal"></input>
         </div>
         <div>
-            <input type="image" src="img/sonido_btn.png" class="musicPrincipal"></input>
-            <input type="image" src="img/Créditos_btn.png" class="creditsPrincipal"></input>
+            <input type="image" src="img/on_inicio_bt.png" class="musicPrincipal"></input>
+            <input type="image" src="img/creditos_bt.png" class="creditsPrincipal"></input>
         </div>
     </section>
     <section class="intro1 ocultar">
@@ -236,28 +236,51 @@
     <!-- FIN CONCENTRATE -->
 
     <!-- Puzzle beginning -->
-    <section class="puzzle backgroundSection ocultar">
-        <img src="img/Kila.png" class="killaPuzzle"></img>
-        <img src="img/atras_btn.png" class="btnAtrasPuzzle"></img>
-        <img src="img/sonido_btn.png" class="btnSonidoPuzzle"></img>
 
-        <section class="intro backgroundSection ocultar">
-            <img src="img/rompecabezas.png" class="puzzle_text"></img>
-            <img src="img/Jugar_btn.png" class="btnJugarPuzzle"></img>
+        <section id="introPuzzle" class="backgroundSection ocultar">
+                <div class="BtnInitialhomePuzle">
+                        <input type="image" src="img/home_bt.png"></input>
+                </div>
+                <div class="btnInitialSonidoPuzzle">
+                        <input type="image" src="img/on_bt.png"></input>
+                </div>
+            <div class="contenTitulePuzzle">
+                 <img src="img/rompecabezas_txt.png" class="puzzle_text"></img>
+            </div>   
+            <div class="playInitial">
+                 <input type="image" src="img/Jugar_btn.png" onclick="changePage('DevelopPuzzle','introPuzzle')"></input>
+            </div> 
+            <div class="backInitial">
+                    <input type="image" src="img/volver_bt.png"></input>
+            </div>
+            <div class="gifPuzzle">
+                    <img src="img/minitutorial_rompecabezas.gif">
+            </div>
+            <div class="kilaInitialPuzzle">
+                
+                    <img src="img/kila_r.png" class="kilaInitialPuzzle">
+            </div>      
 
         </section>
 
-        <section id="GanarPuzzle" class="ganar backgroundSection ocultar">
-            <img src="img/ganaste_rompecabezas.png" class="Lose"></img>
-            <img src="img/Jugar_btn.png" class="btnJugarPuzzle ganar"></img>
+        <section id="GanarPuzzle" class="backgroundSection ocultar">
+                <div class="BtnWinhomePuzle">
+                        <input type="image" src="img/home_bt.png"></input>
+                </div>
+                <div class="btnWinSonidoPuzzle">
+                        <input type="image" src="img/on_bt.png"></input>
+                </div>
+                <div class="textWin">
+                        <img src="img/ganaste_rompecabezas.png" class="Lose"></img>
+                        <img src="img/juegaotra_bt.png" class="ubicationButton" onclick="changePage('DevelopPuzzle','GanarPuzzle')"></img>
+                </div>
+                <div class="kilaWin">
+                    <img src="img/Kila.png" alt="">
+                </div>
+            
         </section>
 
-        <section class="perder backgroundSection ocultar">
-            <img src="img/perdiste_rompecabezas.png" class="win"></img>
-            <img src="img/Jugar_btn.png" class="btnJugarPuzzle perder"></img>
-        </section>
-    </section>
-    <section id="DevelopPuzzle">
+    <section id="DevelopPuzzle" class="ocultar">
         <div class="titulePuzzle">
             <div class="ImgPuzzle">
                 <img src="img/rompecabezas_titulo.png">
@@ -267,12 +290,12 @@
                 <input type="image" src="img/home_bt.png"></input>
         </div>
         <div class="btnSonidoPuzzle">
-                <input type="image" src="img/sonido_btn.png"></input>
+                <input type="image" src="img/on_bt.png"></input>
         </div>
         <div class="tableGamePuzzle">
             
                 <svg width="100%" height="100%" id="entrono">
-                    <g><image xlink:href="img/imagen1_rompecabezas.png" width="439" height="440" x="55" y="65"></g>
+                    <g><image xlink:href="img/imagen1_rompecabezas.png" width="439" height="440" x="40" y="35"></g>
                         <g class="padre" id="0"><image xlink:href="img/pieza 1.png" class="movil"></image></g>
                         <g class="padre" id="1"><image xlink:href="img/pieza 2.png" class="movil"></image></g>
                         <g class="padre" id="2"><image xlink:href="img/pieza 3.png" class="movil"></image></g>
