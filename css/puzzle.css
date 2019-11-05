@@ -3,34 +3,38 @@
     padding: 0;
     text-align: center;
     height: 100%;
-    background-image: url('../img/Fondo_cafe.png');
 }
 .nameApp{
     width: 100%;
     height: 0%;
 }
 .titule{
-    width: 100%;
-    height: auto
+    width: 70%;
 }
 .playPrincipal{
+    outline: 0;
+    border: 0;
     position: fixed;
     left: 42%;
-    top: 57%;
+    top: 47%;
 }
 .musicPrincipal{
+    outline: 0;
+    border: 0;
     position: fixed;
     left: 42%;
-    top: 85%;
+    top: 78%;
 }
 .creditsPrincipal{
+    outline: 0;
+    border: 0;
     position: fixed;
     left: 53%;
-    top: 87%;
+    top: 78%;
 }
 .childrens{
     position: absolute;
-    top: 0%;
+    top: -11%;
     right: 0%;
     width: 100%;
     height: auto;
@@ -40,14 +44,14 @@
     padding: 0;
     text-align: center;
     height: 100%;
-    /* background-image: url('../img/Repite.png'); */
+    background-image: url('../img/Repite.png');
 }
 .backgroundSection{
     margin: 0;
     padding: 0;
     text-align: center;
     height: 100%;
-    /* background-image: url('../img/Repite.png'); */
+    background-image: url('../img/Repite.png');
 }
 .history1{
     width: 100%;
@@ -84,10 +88,8 @@
 
 .puzzle_text{
     position: fixed;
-    top: 13%;
+    top: 11%;
     left: 18%;
-    width: 485px;
-    height: 364px;
 }
 .btnJugarPuzzle{
     position: fixed;
@@ -126,10 +128,8 @@
 }
 .Lose{
     position: fixed;
-    top: 13%;
+    top: 10%;
     left: 12%;
-    width: 598px;
-    height: 578px;
 }
 .win{
     position: fixed;
@@ -139,7 +139,7 @@
     height: 578px;
 }
 #DevelopPuzzle{
-    /* background-image: url(../img/background.png); */
+    background-image: url(../img/background.png);
     background-size:cover;
     position: relative;
     overflow: hidden;
@@ -152,24 +152,25 @@
     margin-top: 7px;
 }
 .ImgPuzzle{
-    margin-top: 22px;
+    margin-top: 10px;
     text-align: center;
 }
 .BtnhomePuzle{
     float: left;
     position: fixed;
-    top: 30px;
+    top: 12px;
     left: 46px;
 }
 .btnSonidoPuzzle{
     position: fixed;
-    top: 30px;
-    left: 87%;
+    top: 11px;
+    left: 89%;
 }
 .tableGamePuzzle{
-    margin-top: -15px;
+    border-radius: 0 0 34px 34px;
+    margin-top: -7px;
     width: 92%;
-    height: 80%;
+    height: 78%;
     background-image: url(../img/fondo_rompecabezas.png);
     background-repeat: no-repeat;
     margin-left: 49px;  
@@ -180,4 +181,60 @@
 .entrono{
     position: fixed;
     overflow: hidden;
+}
+.BtnInitialhomePuzle{
+    float: left;
+    position: fixed;
+    top: 12px;
+    left: 46px;
+}
+.btnInitialSonidoPuzzle{
+    position: fixed;
+    bottom: 88%;
+    left: 88%;
+    width: 65px;
+    height: 70px;
+}
+.playInitial{
+    position: fixed;
+    top: 62%;
+    left: 28%;
+}
+.backInitial{
+    position: fixed;
+    top: 81%;
+    left: 8%;
+}
+.kilaInitialPuzzle{
+    position: fixed;
+    top: 56%;
+    left: 60%;
+}
+.gifPuzzle{
+    position: fixed;
+    top: 13%;
+    left: 63%;
+}
+.BtnWinhomePuzle{
+    float: left;
+    position: fixed;
+    top: 12px;
+    left: 46px;
+}
+.btnWinSonidoPuzzle{
+    position: fixed;
+    bottom: 88%;
+    left: 88%;
+    width: 65px;
+    height: 70px;
+}
+.kilaWin{
+    position: fixed;
+    top:30%;
+    left: 69%;
+}
+.ubicationButton{
+    position: fixed;
+    top:70%;
+    left: 35%;
 }

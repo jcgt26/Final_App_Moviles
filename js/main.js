@@ -2,61 +2,64 @@ function changePage(idIn, idOut) {
     document.getElementById(idOut).classList.add("ocultar");
     document.getElementById(idIn).classList.remove("ocultar");
 }
-
+function changeHTML(){
+    document.getElementById("elegir_juego").classList.add("ocultar");
+    document.location.href="puzzle.html"
+}
 var piezas=document.getElementsByClassName('movil');
-var tamWidth=[114,111,111,112,114,111,111,112,114,111,111,112,114,111,111,112];
+var tamWidth=[115,114,114,114,115,114,114,114,115,116,118,114,115,114,114,114];
 var tamHeight=[110,110,110,110,110,110,110,110,110,110,110,110,110,110,110,110];
 for(var i=0;i<piezas.length;i++){
     piezas[i].setAttribute("width", tamWidth[i]);
     piezas[i].setAttribute("height",tamHeight[i]);
-        if(i==0){
+        if(i==9){
             piezas[i].setAttribute("x",520);
-            piezas[i].setAttribute("y", 35);
-        }else if(i==1){
+            piezas[i].setAttribute("y", 15);
+        }else if(i==12){
             piezas[i].setAttribute("x",642);
-            piezas[i].setAttribute("y", 35);
-        }else if(i==2){
-            piezas[i].setAttribute("x", 767);
-            piezas[i].setAttribute("y", 35);
-        }else if(i==3){
-            piezas[i].setAttribute("x",892);
-            piezas[i].setAttribute("y", 35);
-        }else if(i==4){
-            piezas[i].setAttribute("x",520);
-            piezas[i].setAttribute("y", 163); 
-        }else if(i==5){
-            piezas[i].setAttribute("x",642);
-            piezas[i].setAttribute("y", 163);
+            piezas[i].setAttribute("y", 15);
         }else if(i==6){
+            piezas[i].setAttribute("x", 767);
+            piezas[i].setAttribute("y", 15);
+        }else if(i==0){
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 15);
+        }else if(i==1){
+            piezas[i].setAttribute("x",520);
+            piezas[i].setAttribute("y", 135); 
+        }else if(i==15){
+            piezas[i].setAttribute("x",642);
+            piezas[i].setAttribute("y", 135);
+        }else if(i==11){
             piezas[i].setAttribute("x",767);
-            piezas[i].setAttribute("y", 163);
+            piezas[i].setAttribute("y", 135);
         }else if(i==7){
             piezas[i].setAttribute("x",892);
-            piezas[i].setAttribute("y", 163);
-        }else if(i==8){
+            piezas[i].setAttribute("y", 135);
+        }else if(i==3){
             piezas[i].setAttribute("x",520);
-            piezas[i].setAttribute("y", 290);
-        }else if(i==9){
-            piezas[i].setAttribute("x",642);
-            piezas[i].setAttribute("y", 290);
-        }else if(i==10){
-            piezas[i].setAttribute("x",767);
-            piezas[i].setAttribute("y", 290);
-        }else if(i==11){
-            piezas[i].setAttribute("x",892);
-            piezas[i].setAttribute("y", 290);
-        }else if(i==12){
-            piezas[i].setAttribute("x",520);
-            piezas[i].setAttribute("y", 418);
+            piezas[i].setAttribute("y", 255);
         }else if(i==13){
             piezas[i].setAttribute("x",642);
-            piezas[i].setAttribute("y", 418);
+            piezas[i].setAttribute("y", 255);
+        }else if(i==5){
+            piezas[i].setAttribute("x",767);
+            piezas[i].setAttribute("y", 255);
+        }else if(i==2){
+            piezas[i].setAttribute("x",892);
+            piezas[i].setAttribute("y", 255);
+        }else if(i==4){
+            piezas[i].setAttribute("x",520);
+            piezas[i].setAttribute("y", 380);
+        }else if(i==10){
+            piezas[i].setAttribute("x",642);
+            piezas[i].setAttribute("y", 380);
         }else if(i==14){
             piezas[i].setAttribute("x",767);
-            piezas[i].setAttribute("y", 418);
-        }else if(i==15){
+            piezas[i].setAttribute("y", 380);
+        }else if(i==8){
             piezas[i].setAttribute("x",892);
-            piezas[i].setAttribute("y", 418);
+            piezas[i].setAttribute("y", 380);
         }         
     piezas[i].addEventListener("touchstart",seleccionarElemento,false);
 }
@@ -108,8 +111,8 @@ function reordenar(evt){
     return entrono.lastChild.firstChild;
 
 }
-var origX=[53,164,275,383,53,164,274,382,53,164,275,382,53,164,274,382];
-var origY=[65,65,65,65,174,174,174,174,285,285,285,285,392,392,392,392];
+var origX=[37,148,259,370,37,148,259,370,37,147,257,370,37,148,259,370];
+var origY=[35,35,35,35,145,145,145,145,255,255,255,255,365,365,365,365];
 function iman(){
     for(var i=0;i<piezas.length;i++){
         if(Math.abs(currentPosx-origX[i])<15 && Math.abs(currentPosy-origY[i])<15){
