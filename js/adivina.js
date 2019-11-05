@@ -1,10 +1,8 @@
-window.onload = init;
+// window.onload = init;
 
-function init() {
-    
-    var song = document.getElementById("soundTrack");
-    song.volume = 0.05;
-}
+// function init() {
+
+// }
 
 let words = [];
 let guessedLetters = [];
@@ -795,38 +793,3 @@ function keyboardMode(state) {
 }
 
 
-function StartOrStop(estado) {
-
-    var audio = document.getElementById("soundTrack")
-    let btnSound1 = document.getElementById("btnSonidoOnMainHang");
-    let btnSound2 = document.getElementById("btnSonidoOnGameHangMan");
-    let btnSound3 = document.getElementById("soundBtnHangmanGameOver");
-    let btnSound4 = document.getElementById("soundBtnHangmanGameWon")
- 
-
-    if (estado.value === "Off") {
-        btnSound1.src = "img/btnSoundOnHangman.png";
-        btnSound1.value = "On"
-        btnSound2.src = "img/btnSoundOnHangman.png";
-        btnSound2.value = "On"
-        btnSound3.src = "img/btnSoundOnHangman.png";
-        btnSound3.value = "On"
-        btnSound4.src = "img/btnSoundOnHangman.png";
-        btnSound4.value = "On"
-        
-        audio.play();
-    } else {
-        btnSound1.src = "img/btnSoundOffHangman.png";
-        btnSound1.value = "Off"
-        btnSound2.src = "img/btnSoundOffHangman.png";
-        btnSound2.value = "Off"
-        btnSound3.src = "img/btnSoundOffHangman.png";
-        btnSound3.value = "Off"
-        btnSound4.src = "img/btnSoundOffHangman.png";
-        btnSound4.value = "Off"
-        audio.pause();
-    }
-
-
-
-}

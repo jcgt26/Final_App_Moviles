@@ -56,7 +56,7 @@ section{
 
 #tutorialPalabras{
     position: absolute;
-    top: 19%;
+    top: 13%;
     left: 63%;
 }
 #divPlayBtn{
@@ -115,7 +115,7 @@ section{
 
 #divPlayAgainBtnGameOver{
     position: absolute;
-    top: 66%;
+    top: 69%;
     left: 37.5%;
 }
 
@@ -152,7 +152,7 @@ section{
 #divPlayAgainBtnGameWon{
 
     position: absolute;
-    top: 66%;
+    top: 71%;
     left: 37.5%
 }
 

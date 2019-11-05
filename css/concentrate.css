@@ -15,7 +15,7 @@ body{
     position: relative;
     width:100%;
     height:100%;
-    background-image: url('../img/Créditos/Fondo_cafe.png');
+    background-image: url('../img/Repite-min.png');
 }
 .texto_creditos{
     position: fixed;
@@ -23,7 +23,7 @@ body{
     right: 35%;
     width: 322px;
     height: 316px;
-    background: url("../img/Créditos/Créditos.png") no-repeat;
+    background: url("../img/creditos.png") no-repeat;
     background-position: center center;
     background-size: 100%;
 }
@@ -31,22 +31,22 @@ body{
 .atras_creditos{
     position: fixed;
     bottom: 3%;
-    right: 35%;
-    width: 133px;
+    right: 40%;
+    /* width: 133px;
     height: 153px;
     background: url("../img/Créditos/Atras_btn.png") no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 100%; */
 }
 .sonido_creditos{
     position: fixed;
     bottom: 3%;
-    left: 35%;
-    width: 133px;
+    left: 40%;
+    /* width: 133px;
     height: 153px;
     background: url("../img/Créditos/Sonido_creditos_btn.png") no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 100%; */
 }
 /* -----------------Section 1------------------------- */
 .killa_intro{
@@ -78,7 +78,7 @@ body{
     background-size: 100%;
 }
 .btn_jugar.ganar{
-    bottom: 16%;
+    bottom: 8%;
     left: 37%;
     width: 140px;
     height: 150px; 
@@ -160,8 +160,8 @@ body{
 /* ----------------Tarjetas------------------- */
 .wrap{
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 12%;
+    left: 9%;
     width: 85%;
     height: auto;
     margin: 50px auto;
@@ -250,7 +250,7 @@ body{
     top: 17%;
     left: 8%;
     width: 846px;
-    height: 530px;
+    height: 520px;
     /* background-image: url(../img/Concentrate/fondo_concentrate.png) no-repeat; */
     /* background-color: red; */
     background-position: center center;
@@ -295,4 +295,22 @@ body{
 }
 #btn_rompecabezas.btns_menu{
     right: 15%;
+}
+#titleWithText.texto_concentrate{
+    left: 13%;
+}
+
+/* #divSoundBtn{
+    top: 1%;
+}
+#divHomeBtn{
+    top: 1%;
+} */
+
+#divSoundBtn.topbtn{
+    top: 1%;
+}
+
+#HomeBtnHangman.topbtn{
+    top: 1%;
 }
