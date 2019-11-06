@@ -134,7 +134,7 @@ function testing(){
         }
 
     }
-    if(bien_ubicada==16){
+    if(bien_ubicada==16){        
         changePage("GanarPuzzle", "DevelopPuzzle");
     }
 }
