@@ -314,3 +314,7 @@ body{
 #HomeBtnHangman.topbtn{
     top: 1%;
 }
+.positionChildren{
+    position: absolute;
+    left: 4.5%;
+}

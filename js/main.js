@@ -87,7 +87,6 @@ var currentX=0;
 var currentY=0;
 var currentPosX=0;
 var currentPosY=0;
-var clientX=0, clientY=0;
 
 function seleccionarElemento(evt){ 
     elementSelect=reordenar(evt); 
@@ -182,7 +181,4 @@ function StartOrStopPuzzle(estado) {
         btnPSound3.value = "Off"        
         audio.pause();
     }
-
-
-
 }
