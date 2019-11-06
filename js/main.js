@@ -6,6 +6,25 @@ function changeHTML(){
     document.getElementById("elegir_juego").classList.add("ocultar");
     document.location.href="puzzle.html"
 }
+function changeWinHome(){
+    document.getElementById("GanarPuzzle").classList.add("ocultar");
+    document.location.href="index.html";
+    document.getElementById("backgroundInitial").classList.remove("ocultar");
+}
+function changeInitialHome(){
+    document.getElementById("introPuzzle").classList.add("ocultar");
+    document.location.href="index.html";
+    document.getElementById("backgroundInitial").classList.remove("ocultar");
+}
+function changePuzzleMap(){
+    document.getElementById("introPuzzle").classList.add("ocultar");
+    document.location.href="index.html"
+}
+function changePuzzleHome(){
+    document.getElementById("DevelopPuzzle").classList.add("ocultar");
+    document.location.href="index.html";
+    document.getElementById("backgroundInitial").classList.remove("ocultar");
+}
 var piezas=document.getElementsByClassName('movil');
 var tamWidth=[115,114,114,114,115,114,114,114,115,116,118,114,115,114,114,114];
 var tamHeight=[110,110,110,110,110,110,110,110,110,110,110,110,110,110,110,110];
@@ -137,4 +156,33 @@ function testing(){
     if(bien_ubicada==16){        
         changePage("GanarPuzzle", "DevelopPuzzle");
     }
+}
+function StartOrStopPuzzle(estado) {
+
+    var audio = document.getElementById("soundTrackPuzzle");
+
+    let btnPSound1 = document.getElementById("introPuzzleMusic");
+    let btnPSound2 = document.getElementById("winPuzzleMusic");
+    let btnPSound3 = document.getElementById("DevelopPuzzleMusic"); 
+    if (estado.value === "Off") {
+        btnPSound1.src = "img/btnSoundOnHangman.png";
+        btnPSound1.value = "On"
+        btnPSound2.src = "img/btnSoundOnHangman.png";
+        btnPSound2.value = "On"
+        btnPSound3.src = "img/btnSoundOnHangman.png";
+        btnPSound3.value = "On"      
+        
+        audio.play();
+    } else {
+        btnPSound1.src = "img/btnSoundOffHangman.png";
+        btnPSound1.value = "Off"
+        btnPSound2.src = "img/btnSoundOffHangman.png";
+        btnPSound2.value = "Off"
+        btnPSound3.src = "img/btnSoundOffHangman.png";
+        btnPSound3.value = "Off"        
+        audio.pause();
+    }
+
+
+
 }

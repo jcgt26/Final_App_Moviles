@@ -15,10 +15,10 @@
 
     <section id="introPuzzle" class="backgroundSection">
         <div class="BtnInitialhomePuzle">
-                <input type="image" src="img/home_bt.png"></input>
+                <input type="image" src="img/home_bt.png" onclick="changeInitialHome()"></input>
         </div>
         <div class="btnInitialSonidoPuzzle">
-                <input type="image" src="img/on_bt.png"></input>
+                <input id="introPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
         </div>
     <div class="contenTitulePuzzle">
          <img src="img/rompecabezas_txt.png" class="puzzle_text"></img>
@@ -27,7 +27,7 @@
          <input type="image" src="img/Jugar_btn.png" onclick="changePage('DevelopPuzzle','introPuzzle')"></input>
     </div> 
     <div class="backInitial">
-            <input type="image" src="img/volver_bt.png"></input>
+            <input type="image" src="img/volver_bt.png" onclick="changePuzzleMap()"></input>
     </div>
     <div class="gifPuzzle">
             <img src="img/minitutorial_rompecabezas.gif">
@@ -41,14 +41,14 @@
 
 <section id="GanarPuzzle" class="backgroundSection ocultar">
         <div class="BtnWinhomePuzle">
-                <input type="image" src="img/home_bt.png"></input>
+                <input type="image" src="img/home_bt.png" onclick="changeWinHome()"></input>
         </div>
         <div class="btnWinSonidoPuzzle">
-                <input type="image" src="img/on_bt.png"></input>
+                <input id="winPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
         </div>
         <div class="textWin">
                 <img src="img/ganaste_rompecabezas.png" class="Lose"></img>
-                <img src="img/juegaotra_bt.png" class="ubicationButton" onclick="changePage('DevelopPuzzle','GanarPuzzle'), RestartPuzzle()" ></img>
+                <img src="img/juegaotra_bt.png" class="ubicationButton" onclick="changePage('DevelopPuzzle','GanarPuzzle')" ></img>
         </div>
         <div class="kilaWin">
             <img src="img/Kila.png" alt="">
@@ -63,10 +63,10 @@
     </div>            
 </div>
 <div class="BtnhomePuzle">
-        <input type="image" src="img/home_bt.png"></input>
+        <input type="image" src="img/home_bt.png" onclick="changePuzzleHome()"></input>
 </div>
 <div class="btnSonidoPuzzle">
-        <input type="image" src="img/on_bt.png"></input>
+        <input id="DevelopPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
 </div>
 <div class="tableGamePuzzle">
     
@@ -93,6 +93,7 @@
 </div>
 </section>
 <!-- Puzzle ending -->
+        <audio id="soundTrackPuzzle" src="audio/musicadefondo.mp3" autoplay="true" loop="true"></audio>
         <script src="js/main.js"></script>
 </body>
 
