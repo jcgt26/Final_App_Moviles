@@ -181,6 +181,10 @@ function StartOrStop(estado) {
     let btnSound3 = document.getElementById("soundBtnHangmanGameOver");
     let btnSound4 = document.getElementById("soundBtnHangmanGameWon")
     let btnSound5 = document.getElementById("btnSonidoConcentrate")
+    let btnSound6 = document.getElementById("sonido_intro0")
+    let btnSound7 = document.getElementById("soundBtnIntro2")
+    
+
  
     if (estado.value === "Off") {
         btnSound1.src = "img/btnSoundOnHangman.png";
@@ -193,6 +197,11 @@ function StartOrStop(estado) {
         btnSound4.value = "On"
         btnSound5.src = "img/btnSoundOnHangman.png";
         btnSound5.value = "On"
+        btnSound6.src = "img/btnSoundOnHangman.png";
+        btnSound6.value = "On"
+        btnSound7.src = "img/btnSoundOnHangman.png";
+        btnSound7.value = "On"
+       
         
         audio.play();
     } else {
@@ -206,6 +215,11 @@ function StartOrStop(estado) {
         btnSound4.value = "Off"
         btnSound5.src = "img/btnSoundOffHangman.png";
         btnSound5.value = "Off"
+        btnSound6.src = "img/btnSoundOffHangman.png";
+        btnSound6.value = "Off"
+        btnSound7.src = "img/btnSoundOffHangman.png";
+        btnSound7.value = "Off"
+        
         audio.pause();
     }
 
@@ -236,7 +250,7 @@ addCardClass();
 array_cartas.forEach(element => {
     if(element.classList.contains('cruz'))
         element.classList.remove('cruz');
-        element.onclick = flip(this)
+        // element.onclick = flip(this)
     if(element.classList.contains('iglesia'))
         element.classList.remove('iglesia');
     if(element.classList.contains('jesus'))
