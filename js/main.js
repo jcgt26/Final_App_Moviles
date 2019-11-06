@@ -14,7 +14,8 @@ function changeWinHome(){
 function changeInitialHome(){
     document.getElementById("introPuzzle").classList.add("ocultar");
     document.location.href="index.html";
-    document.getElementById("backgroundInitial").classList.remove("ocultar");
+    document.getElementById("intro0").classList.remove("ocultar");
+    document.getElementById("elegir_juego").classList.remove("ocultar");
 }
 function changePuzzleMap(){
     document.getElementById("introPuzzle").classList.add("ocultar");
@@ -81,6 +82,7 @@ for(var i=0;i<piezas.length;i++){
             piezas[i].setAttribute("y", 380);
         }         
     piezas[i].addEventListener("touchstart",seleccionarElemento,false);
+    piezas[i].setAttribute("onmousedown","seleccionarPieza(evt)");
 }
 var elementSelect=0;
 var currentX=0;
@@ -88,6 +90,37 @@ var currentY=0;
 var currentPosX=0;
 var currentPosY=0;
 
+function seleccionarPieza(evt){
+    elementSelect = reordenar(evt);
+	currentX = evt.clientX;        
+	currentY = evt.clientY;
+	currentPosx = parseFloat(elementSelect.getAttribute("x"));     
+	currentPosy = parseFloat(elementSelect.getAttribute("y"));
+	elementSelect.setAttribute("onmousemove","moverPieza(evt)");
+}
+
+function moverPieza(evt){
+	var dx = evt.clientX - currentX;
+	var dy = evt.clientY - currentY;
+	currentPosx = currentPosx + dx;
+	currentPosy = currentPosy + dy;
+	elementSelect.setAttribute("x",currentPosx);
+	elementSelect.setAttribute("y",currentPosy);
+	currentX = evt.clientX;        
+	currentY = evt.clientY;
+	elementSelect.setAttribute("onmouseout","deseleccionarPieza(evt)");
+	elementSelect.setAttribute("onmouseup","deseleccionarPieza(evt)");
+	iman();
+}
+function deseleccionarPieza(evt){
+	testing();
+	if(elementSelect != 0){			
+		elementSelect.removeAttribute("onmousemove");
+		elementSelect.removeAttribute("onmouseout");
+		elementSelect.removeAttribute("onmouseup");
+		elementSelect = 0;
+	}
+}
 function seleccionarElemento(evt){ 
     elementSelect=reordenar(evt); 
     currentX = evt.touches[0].clientX;

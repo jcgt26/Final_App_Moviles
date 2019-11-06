@@ -757,7 +757,7 @@ function backToMenuEndGame(section) {
     sections[0].classList.add("ocultar");
     //sections[section].classList.add("ocultar");
     sections[1].classList.remove("ocultar");
-    changePage('intro0', 'mainScreen_hangMan');
+    changePage('elegir_juego', 'mainScreen_hangMan');
 }
 
 

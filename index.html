@@ -45,8 +45,8 @@
         <div id="divContinueBtnIntro2">
             <input id="continueBtnIntro2" type="image" src="img/btnSeguir.png" alt="Submit" class="button removeBorder" onclick="changePage('intro2Screen','section_intro1')">
         </div>
-        <div id="divAtrasBtnIntro2">
-            <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="changePage('intro0','section_intro1')">
+        <div id="divHomeBtnIntro2">
+            <input id="homeBtnIntro2" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder" onclick="changePage('intro0','section_intro1')">
         </div>
 
     </section>
@@ -70,6 +70,9 @@
 
         <div id="divContinueBtnIntro2">
             <input id="continueBtnIntro2" type="image" src="img/btnSeguir.png" alt="Submit" class="button removeBorder" onclick="changePage('intro3Screen','intro2Screen')">
+        </div>
+        <div id="divOmitirBtnIntro2">
+            <input id="OmitirBtnIntro2" type="image" src="img/omitir_bt.png" alt="Submit" class="button removeBorder" onclick="changePage('elegir_juego','intro2Screen'), storyRead()">
         </div>
         <div id="divAtrasBtnIntro2">
             <input id="atrasBtnIntro2" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="changePage('section_intro1','intro2Screen')">
@@ -96,7 +99,9 @@
             <input id="soundBtnIntro3" type="image" src="img/btnSoundOnHangman.png" alt="Submit" class="button removeBorder"
             onclick="StartOrStop(this)" value="On">
         </div>
-
+        <div id="divOmitirBtnIntro2">
+            <input id="OmitirBtnIntro2" type="image" src="img/omitir_bt.png" alt="Submit" class="button removeBorder" onclick="changePage('elegir_juego','intro3Screen'), storyRead()">
+        </div>
         <div id="divContinueBtnIntro3">
             <input id="continueBtnIntro3" type="image" src="img/btnSeguir.png" alt="Submit" class="button removeBorder" onclick="changePage('elegir_juego','intro3Screen'), storyRead()">
         </div>
@@ -145,7 +150,7 @@
         </div>
 
         <div id="divBackBtn">
-            <input id="backBtnHangman" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="changePage('elegir_juego', 'mainScreen_hangMan')">
+            <input id="backBtnHangman" type="image" src="img/btnAtras.png" alt="Submit" class="button removeBorder" onclick="changePage('intro0', 'mainScreen_hangMan')">
         </div>
 
         <div id="divSoundBtn">
@@ -154,7 +159,7 @@
         </div>
 
         <div id="divHomeBtn">
-            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"onclick="changePage('intro0', 'mainScreen_hangMan')">
+            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"onclick="changePage('elegir_juego', 'mainScreen_hangMan')">
         </div>
 
     </section>
@@ -176,7 +181,7 @@
 
         <div id="divBackBtnHangManGameOver">
             <input id="backBtnHangmanGameOver" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"
-                onclick="backToMenuEndGame('2'), changePage('intro0', 'gameOverScreen_hangMan')">
+                onclick="backToMenuEndGame('2')">
         </div>
 
         <div id="divSoundBtnHangManGameOver">
@@ -225,7 +230,7 @@
 
         <div id="btnHomeHangman">
             <input type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder"
-                onclick="changePage('intro0', 'gameScreen_hangMan')">
+                onclick="changePage('elegir_juego', 'gameScreen_hangMan')">
         </div>
 
         <div id="btnSoundHangman">
@@ -554,7 +559,7 @@
         <!-- GANAR -->
         <section id="1" class="ganar ocultar ">
             <span class="ganaste "></span>
-            <span class="btn_home" onclick="changePage('intro0','1')"></span>
+            <span class="btn_home" onclick="changePage('elegir_juego','1')"></span>
             <img id="killa_ganaste" src="img/kila2.png">
             <div id="divSoundBtnHangManGameWon">
                 <input id="soundBtnConcentrateGameWon" type="image" src="img/btnSonidoOn.png" alt="Submit" class="button removeBorder"
@@ -579,7 +584,7 @@
         </div>
 
         <div id="divHomeBtn" class="topbtn">
-            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder topbtn" onclick="changePage('intro0','2')">
+            <input id="HomeBtnHangman" type="image" src="img/btnHome.png" alt="Submit" class="button removeBorder topbtn" onclick="changePage('elegir_juego','2')">
         </div>
         <img src="img/Concentrate/fondo_concentrate.png" alt="" id="fondo_concentrate">
         <div class="wrap">
@@ -606,19 +611,19 @@
     <!-- Puzzle beginning -->
     <section id="introPuzzle" class="backgroundSection ocultar">
         <div class="BtnInitialhomePuzle">
-                <input type="image" src="img/home_bt.png" class="removeBorder"></input>
+                <input type="image" src="img/home_bt.png" onclick="changeInitialHome()"></input>
         </div>
         <div class="btnInitialSonidoPuzzle">
-                <input type="image" src="img/on_bt.png" class="removeBorder"></input>
+                <input id="introPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
         </div>
     <div class="contenTitulePuzzle">
          <img src="img/rompecabezas_txt.png" class="puzzle_text"></img>
     </div>   
     <div class="playInitial">
-         <input type="image" src="img/Jugar_btn.png" class="removeBorder" onclick="changePage('DevelopPuzzle','introPuzzle')"></input>
+         <input type="image" src="img/Jugar_btn.png" onclick="changePage('DevelopPuzzle','introPuzzle')"></input>
     </div> 
     <div class="backInitial">
-            <input type="image" src="img/volver_bt.png" class="removeBorder"></input>
+            <input type="image" src="img/volver_bt.png" onclick="changePuzzleMap()"></input>
     </div>
     <div class="gifPuzzle">
             <img src="img/minitutorial_rompecabezas.gif">
@@ -632,14 +637,14 @@
 
 <section id="GanarPuzzle" class="backgroundSection ocultar">
         <div class="BtnWinhomePuzle">
-                <input type="image" src="img/home_bt.png" class="removeBorder"></input>
+                <input type="image" src="img/home_bt.png" onclick="changeWinHome()"></input>
         </div>
         <div class="btnWinSonidoPuzzle">
-                <input type="image" src="img/on_bt.png" class="removeBorder"></input>
+                <input id="winPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
         </div>
         <div class="textWin">
                 <img src="img/ganaste_rompecabezas.png" class="Lose"></img>
-                <img src="img/juegaotra_bt.png" class="ubicationButton" onclick="changePage('DevelopPuzzle','GanarPuzzle')"></img>
+                <img src="img/juegaotra_bt.png" class="ubicationButton" onclick="changePage('DevelopPuzzle','GanarPuzzle')" ></img>
         </div>
         <div class="kilaWin">
             <img src="img/Kila.png" alt="">
@@ -654,10 +659,10 @@
     </div>            
 </div>
 <div class="BtnhomePuzle">
-        <input type="image" src="img/home_bt.png" class="removeBorder"></input>
+        <input type="image" src="img/home_bt.png" onclick="changePuzzleHome()"></input>
 </div>
 <div class="btnSonidoPuzzle">
-        <input type="image" src="img/on_bt.png" class="removeBorder"></input>
+        <input id="DevelopPuzzleMusic" type="image" src="img/btnSoundOnHangman.png" onclick="StartOrStopPuzzle(this)" value="On"></input>
 </div>
 <div class="tableGamePuzzle">
     
@@ -683,6 +688,10 @@
            
 </div>
 </section>
+<!-- Puzzle ending -->
+        <audio id="soundTrackPuzzle" src="audio/musicadefondo.mp3" autoplay="true" loop="true"></audio>
+        <script src="js/main.js"></script>
+</body>
     <!-- Puzzle ending -->
 
 

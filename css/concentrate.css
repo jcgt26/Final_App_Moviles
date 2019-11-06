@@ -91,8 +91,8 @@ body{
 }
 .btn_home{
     position: fixed;
-    top: 3%;
-    left: 5%;
+    top: 1%;
+    left: 1%;
     width: 82px;
     height:95px;
     background: url("../img/Concentrate/home_bt.png") no-repeat;
