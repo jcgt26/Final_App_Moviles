@@ -175,16 +175,20 @@ array_sections.forEach(section => {
 
 function StartOrStop(estado) {
 
-    var audio = document.getElementById("soundTrack")
+    var audio = document.getElementById("soundTrack");
     let btnSound1 = document.getElementById("btnSonidoOnMainHang");
     let btnSound2 = document.getElementById("btnSonidoOnGameHangMan");
     let btnSound3 = document.getElementById("soundBtnHangmanGameOver");
-    let btnSound4 = document.getElementById("soundBtnHangmanGameWon")
-    let btnSound5 = document.getElementById("btnSonidoConcentrate")
-    let btnSound6 = document.getElementById("sonido_intro0")
-    let btnSound7 = document.getElementById("soundBtnIntro2")
-    
-
+    let btnSound4 = document.getElementById("soundBtnHangmanGameWon");
+    let btnSound5 = document.getElementById("btnSonidoConcentrate");
+    let btnSound6 = document.getElementById("sonido_intro0");
+    let btnSound7 = document.getElementById("soundBtnIntro1");
+    let btnSound8 = document.getElementById("soundBtnIntro2");
+    let btnSound9 = document.getElementById("soundBtnIntro3");
+    let btnSound10 = document.getElementById("soundBtnElegirJuego");
+    let btnSound11 = document.getElementById("btnSonidoOnConcentrate");
+    let btnSound12 = document.getElementById("btnSoundCreditos");
+    let btnSound13 = document.getElementById("soundBtnConcentrateGameWon");
  
     if (estado.value === "Off") {
         btnSound1.src = "img/btnSoundOnHangman.png";
@@ -201,6 +205,18 @@ function StartOrStop(estado) {
         btnSound6.value = "On"
         btnSound7.src = "img/btnSoundOnHangman.png";
         btnSound7.value = "On"
+        btnSound8.src = "img/btnSoundOnHangman.png";
+        btnSound8.value = "On"
+        btnSound9.src = "img/btnSoundOnHangman.png";
+        btnSound9.value = "On"
+        btnSound10.src = "img/btnSoundOnHangman.png";
+        btnSound10.value = "On"
+        btnSound11.src = "img/btnSoundOnHangman.png";
+        btnSound11.value = "On"
+        btnSound12.src = "img/btnSoundOnHangman.png";
+        btnSound12.value = "On"
+        btnSound13.src = "img/btnSoundOnHangman.png";
+        btnSound13.value = "On"
        
         
         audio.play();
@@ -219,6 +235,20 @@ function StartOrStop(estado) {
         btnSound6.value = "Off"
         btnSound7.src = "img/btnSoundOffHangman.png";
         btnSound7.value = "Off"
+        btnSound8.src = "img/btnSoundOffHangman.png";
+        btnSound8.value = "Off"
+        btnSound9.src = "img/btnSoundOffHangman.png";
+        btnSound9.value = "Off"
+        btnSound10.src = "img/btnSoundOffHangman.png";
+        btnSound10.value = "Off"
+        btnSound11.src = "img/btnSoundOffHangman.png";
+        btnSound11.value = "Off"
+        btnSound12.src = "img/btnSoundOffHangman.png";
+        btnSound12.value = "Off"
+        btnSound13.src = "img/btnSoundOffHangman.png";
+        btnSound13.value = "Off"
+        
+        
         
         audio.pause();
     }

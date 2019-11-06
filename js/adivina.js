@@ -757,6 +757,7 @@ function backToMenuEndGame(section) {
     sections[0].classList.add("ocultar");
     //sections[section].classList.add("ocultar");
     sections[1].classList.remove("ocultar");
+    changePage('intro0', 'mainScreen_hangMan');
 }
 
 
@@ -792,4 +793,9 @@ function keyboardMode(state) {
 
 }
 
+function storyRead(){
 
+    let btnPlay = document.getElementById("btnJugarInicio");
+    
+    btnPlay.setAttribute( "onClick", "changePage('elegir_juego','intro0');" );
+}

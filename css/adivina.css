@@ -248,15 +248,7 @@ section{
 
 
 #gameScreen_hangMan{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /* background-image: url('../img/background.png'); */
-    background-position: center;
-    overflow:hidden; 
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat; 
+    
 }
 
 #adivinaBackground{
@@ -610,10 +602,10 @@ section{
 #containerWrongLetters{
     display: inline-block;
     position: absolute;
-    left: 28%;
+    left: 34%;
     right: auto;
     top: 48.5%;
-    width: 100%;   
+    width: 66%;   
    
 }
 
